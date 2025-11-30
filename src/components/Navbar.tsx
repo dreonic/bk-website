@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="flex justify-between items-center px-5 py-2.5 bg-white border-b border-gray-300">
-            <div className="w-48 mx-4">
+        <nav className="flex justify-between items-center px-5 py-1.5 bg-white border-b border-gray-300">
+            <div className="w-36 mx-4">
                 <Link href="/">
                     <Image
                         src="/bk-logo.png"
@@ -21,30 +21,30 @@ const Navbar: React.FC = () => {
                 <li>
                     <Button
                         variant="ghost"
-                        className="text-base font-medium mx-0"
+                        className="text-sm font-medium mx-0"
                     >
                         PAST EVENTS
                     </Button>
                 </li>
                 <li className="ml-5">
-                    <Button variant="ghost" className="text-base font-medium">
+                    <Button variant="ghost" className="text-sm font-medium">
                         PARTNERSHIPS
                     </Button>
                 </li>
                 <li className="ml-5">
-                    <Button variant="ghost" className="text-base font-medium">
+                    <Button variant="ghost" className="text-sm font-medium">
                         COMMITTEE
                     </Button>
                 </li>
                 <li className="ml-5">
-                    <Button variant="ghost" className="text-base font-medium">
+                    <Button variant="ghost" className="text-sm font-medium">
                         FAQ
                     </Button>
                 </li>
                 <li className="ml-5">
                     <Button
                         variant="highlighted"
-                        className="text-base font-medium rounded-full"
+                        className="text-sm font-medium rounded-full"
                     >
                         DONATE
                     </Button>
