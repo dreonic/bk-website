@@ -20,6 +20,12 @@ const gothamBook = localFont({
     display: "swap",
 });
 
+const gothamMedium = localFont({
+    src: "../../assets/fonts/gotham-medium.woff2",
+    variable: "--font-gotham-medium",
+    display: "swap",
+});
+
 const maronsRegular = localFont({
     src: "../../assets/fonts/marons-regular.woff2",
     variable: "--font-marons-regular",
@@ -38,11 +44,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${gothamBook.className} antialiased`}>
+            <body
+                className={`${gothamBook.variable} ${gothamMedium.variable} ${maronsRegular.variable} antialiased font-[family-name:var(--font-gotham-book)]`}
+            >
                 <div className="fixed top-0 left-0 right-0 z-50">
                     <Navbar />
                 </div>
-                <div className="pt-16">{children}</div>
+                {children}
             </body>
         </html>
     );
