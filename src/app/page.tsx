@@ -2,6 +2,7 @@ import LandingPage from "@/components/LandingPage";
 import Footer from "@/components/Footer";
 
 import Image from "next/image";
+import StatisticsItem from "@/components/StatisticsItem";
 
 export default function Home() {
     return (
@@ -65,6 +66,23 @@ export default function Home() {
                             natural surroundings.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            {/* Statistics */}
+            <div className="grid grid-rows-2 w-full justify-items-center bg-primary-brown py-24 gap-16">
+                <div className="flex flex-row items-center gap-16">
+                    <StatisticsItem number="6" label="Cities" />
+                    <StatisticsItem number="14" label="NGOs" />
+                    <StatisticsItem number="300+" label="Volunteers" />
+                </div>
+                <div className="flex flex-row items-center gap-16">
+                    <StatisticsItem number="200+" label="People Reached" />
+                    <StatisticsItem
+                        number="20"
+                        label="Environmental Projects"
+                    />
+                    <StatisticsItem number="13" label="Villages Visited" />
                 </div>
             </div>
         </div>

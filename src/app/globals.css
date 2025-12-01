@@ -42,6 +42,10 @@
     --color-primary-gold: var(--primary-gold);
     --color-primary-pink-foreground: var(--primary-pink-foreground);
     --color-primary-pink: var(--primary-pink);
+    --color-secondary-gold-foreground: var(--secondary-gold-foreground);
+    --color-secondary-gold: var(--secondary-gold);
+    --color-secondary-beige-foreground: var(--secondary-beige-foreground);
+    --color-secondary-beige: var(--secondary-beige);
     --color-popover-foreground: var(--popover-foreground);
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
@@ -68,8 +72,10 @@
     --primary-gold-foreground: oklch(0.145 0 0);
     --primary-pink: oklch(0.6999 0.0958 32.67);
     --primary-pink-foreground: oklch(0.145 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
+    --secondary-gold: oklch(0.8495 0.1169 81.74);
+    --secondary-gold-foreground: oklch(0.205 0 0);
+    --secondary-beige: oklch(0.9356 0.027 95.35);
+    --secondary-beige-foreground: oklch(0.205 0 0);
     --muted: oklch(0.97 0 0);
     --muted-foreground: oklch(0.556 0 0);
     --accent: oklch(0.97 0 0);
