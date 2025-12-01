@@ -1,7 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
-
 const LandingPage: React.FC = () => {
     return (
         <div className="relative h-screen w-full flex flex-col items-center justify-start pt-24">
