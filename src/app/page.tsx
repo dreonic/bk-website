@@ -101,20 +101,20 @@ export default function Home() {
                         className="relative w-full text-center md:text-right"
                         style={{ minHeight: "12vw" }}
                     >
-                        <p className="md:absolute md:left-[4vw] md:top-[3vw] text-sm md:text-[1.25vw] font-bold font-[family-name:var(--font-gotham-book)] mb-2 md:mb-0">
+                        <p className="md:absolute md:left-16 md:top-4 text-sm md:text-xl font-bold font-[family-name:var(--font-gotham-book)] mb-2 md:mb-0">
                             We are
                             <br />
                             going to...
                         </p>
-                        <h1 className="md:absolute md:right-0 md:top-0 text-5xl md:text-[11vw] font-extralight text-primary-pink font-[family-name:var(--font-marons-regular)]">
+                        <h1 className="md:absolute md:right-0 md:top-0 text-5xl md:text-[10.5rem] font-extralight text-primary-pink font-[family-name:var(--font-marons-regular)]">
                             Boyolali!
                         </h1>
-                        <p className="md:absolute md:right-[1vw] md:top-[11vw] text-2xl md:text-[4vw] font-normal text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                        <p className="md:absolute md:right-6 md:top-[8rem] text-2xl md:text-[4vw] font-normal text-primary-brown font-[family-name:var(--font-marons-regular)]">
                             bk 2026
                         </p>
                     </div>
 
-                    <p className="text-sm md:text-[1.5vw] mt-8 md:mt-[6vw] text-center md:text-end font-normal">
+                    <p className="text-sm md:text-[1.5vw] mt-8 md:mt-[3rem] text-center md:text-end font-normal">
                         Balik Kampoeng 2026 will head to Boyolali, a vibrant
                         community known for its rich culture and warm-hearted
                         residents. Volunteers will engage in projects that
