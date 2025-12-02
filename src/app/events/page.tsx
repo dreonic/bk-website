@@ -31,7 +31,7 @@ const eventsData: YearEvents[] = [
             },
             {
                 imageUrl: "/events/2025-surf-the-waves.jpg",
-                eventType: "BK 2025",
+                eventType: "balik kampoeng 2025",
                 eventName: "Surf the Waves",
                 description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -50,7 +50,7 @@ const eventsData: YearEvents[] = [
             },
             {
                 imageUrl: "/events/2024-through-the-jungle.jpg",
-                eventType: "BK 2024",
+                eventType: "balik kampoeng 2024",
                 eventName: "Through the Jungle",
                 description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -62,7 +62,7 @@ const eventsData: YearEvents[] = [
         events: [
             {
                 imageUrl: "/events/2023-beyond-the-shore.jpg",
-                eventType: "BK 2023",
+                eventType: "balik kampoeng 2023",
                 eventName: "Beyond the Shore",
                 description:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",

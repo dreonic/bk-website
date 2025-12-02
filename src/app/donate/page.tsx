@@ -63,16 +63,19 @@ export default function DonatePage() {
 
                 <DonationMethod
                     title="Bank BCA (IDR)"
-                    qrCodeSrc="/donate/qr-bca.png"
-                    qrCodeAlt="BCA QR Code"
                     bankName="Bank BCA"
+                    accountName="Muhammad Wisnu Darmawan"
+                    accountDetails={`Account number: 468-046-6411
+(please use 001 as the last three digits for easy tracking)`}
                 />
 
                 <DonationMethod
                     title="Local Transfer (SGD)"
-                    qrCodeSrc="/donate/qr-paynow.png"
+                    qrCodeSrc="/donate/qr-paynow.jpg"
                     qrCodeAlt="PayNow QR Code"
                     bankName="DBS Bank Pte. Ltd."
+                    accountName="Muhammad Wisnu Darmawan"
+                    accountDetails="PayNow Number: +6596860658"
                 />
 
                 <div className="w-full max-w-md">

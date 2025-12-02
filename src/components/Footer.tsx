@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                         <h3 className="text-lg md:text-[2vw] font-medium">
                             Connect with us
                         </h3>
-                        <div className="flex gap-4">
+                        <div className="flex gap-6">
                             <Link
                                 href="https://instagram.com/balik.kampoeng"
                                 target="_blank"
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                                 />
                             </Link>
                             <Link
-                                href="mailto:contact@balikkampoeng.org"
+                                href="mailto:bk.balikkampoeng@gmail.com"
                                 className="hover:opacity-80 transition-opacity"
                             >
                                 <Mail
