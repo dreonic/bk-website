@@ -30,10 +30,29 @@ export default function FAQPage() {
     const [question, setQuestion] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log({ name, email, question });
-        setIsSubmitted(true);
+
+        try {
+            const response = await fetch(
+                "https://ugaccavdisoogmc3eixgwufq5m0mztfv.lambda-url.ap-southeast-1.on.aws/",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name, email, question }),
+                }
+            );
+
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                console.error("Failed to submit question");
+            }
+        } catch (error) {
+            console.error("Error submitting question:", error);
+        }
     };
 
     return (
