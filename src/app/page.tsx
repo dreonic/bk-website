@@ -10,13 +10,13 @@ export default function Home() {
             <LandingPage />
 
             {/* Our Programme */}
-            <div className="flex flex-col items-center w-full h-144 pt-15 gap-8">
-                <h1 className="text-6xl md:text-7xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
+            <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-6 md:gap-8 px-4">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     Our Programme
                 </h1>
-                <div className="flex items-start justify-center gap-8 md:gap-16 lg:gap-24 mt-10 w-full h-72">
-                    <div className="flex flex-col w-56 items-center gap-2">
-                        <h1 className="text-2xl md:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 mt-4 md:mt-10 w-full">
+                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
                             Beloem BK
                         </h1>
                         <Image
@@ -25,14 +25,14 @@ export default function Home() {
                             width={144}
                             height={144}
                         />
-                        <p className="text-2xs md:text-sm font-medium">
+                        <p className="text-xs md:text-sm font-medium text-center">
                             BeloemBK is an initiative to foster meaningful
                             community involvement by offering participants an
                             opportunity to experience volunteering firsthand.
                         </p>
                     </div>
-                    <div className="flex flex-col w-56 items-center gap-2">
-                        <h1 className="text-2xl md:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
                             Education
                         </h1>
                         <Image
@@ -41,15 +41,15 @@ export default function Home() {
                             width={144}
                             height={144}
                         />
-                        <p className="text-2xs md:text-sm font-medium">
+                        <p className="text-xs md:text-sm font-medium text-center">
                             Our Education arm aims to enhance learning
                             opportunities for the community, providing
                             programmes and activities that support skill
                             development and lifelong learning.
                         </p>
                     </div>
-                    <div className="flex flex-col w-56 items-center gap-2">
-                        <h1 className="text-2xl md:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
                             Environment
                         </h1>
                         <Image
@@ -58,7 +58,7 @@ export default function Home() {
                             width={144}
                             height={144}
                         />
-                        <p className="text-2xs md:text-sm font-medium">
+                        <p className="text-xs md:text-sm font-medium text-center">
                             Our Environment arm focuses on improving the local
                             environment through sustainable projects and
                             initiatives that benefit both the community and the
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
 
             {/* Statistics */}
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 w-full px-32 justify-items-center bg-primary-brown py-24 gap-16">
+            <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center bg-primary-brown py-12 md:py-24 gap-8 md:gap-16">
                 <StatisticsItem number={6} label="Cities" />
                 <StatisticsItem number={14} label="NGOs" />
                 <StatisticsItem number={300} label="Volunteers" showPlus />
@@ -80,15 +80,15 @@ export default function Home() {
 
             {/* Impact */}
 
-            <div className="flex flex-col items-center w-full h-144 pt-15 gap-8">
-                <h1 className="text-[4rem] font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
+            <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-8">
+                <h1 className="text-3xl md:text-[4rem] font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     Impact
                 </h1>
             </div>
 
             {/* Boyolali */}
-            <div className="flex sm:flex-col md:flex-row items-center w-full h-144 bg-secondary-beige">
-                <div className="relative w-1/3 h-full">
+            <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-144 bg-secondary-beige">
+                <div className="relative w-full md:w-1/3 h-64 md:h-full">
                     <Image
                         src="/landing/boyolali2.jpg"
                         alt="Impact Boyolali"
@@ -96,22 +96,25 @@ export default function Home() {
                         className="object-cover"
                     />
                 </div>
-                <div className="relative flex flex-col items-end w-2/3 h-screen px-[8vw] py-[8vw]">
-                    <div className="relative w-full" style={{ height: "12vw" }}>
-                        <p className="absolute left-[4vw] top-[3vw] text-[1.25vw] font-bold font-[family-name:var(--font-gotham-book)]">
+                <div className="relative flex flex-col items-center md:items-end w-full md:w-2/3 px-6 md:px-[8vw] py-8 md:py-[8vw]">
+                    <div
+                        className="relative w-full text-center md:text-right"
+                        style={{ minHeight: "12vw" }}
+                    >
+                        <p className="md:absolute md:left-[4vw] md:top-[3vw] text-sm md:text-[1.25vw] font-bold font-[family-name:var(--font-gotham-book)] mb-2 md:mb-0">
                             We are
                             <br />
                             going to...
                         </p>
-                        <h1 className="absolute right-0 top-0 text-[11vw] font-extralight text-primary-pink font-[family-name:var(--font-marons-regular)]">
+                        <h1 className="md:absolute md:right-0 md:top-0 text-5xl md:text-[11vw] font-extralight text-primary-pink font-[family-name:var(--font-marons-regular)]">
                             Boyolali!
                         </h1>
-                        <p className="absolute right-[1vw] top-[11vw] text-[4vw] font-normal text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                        <p className="md:absolute md:right-[1vw] md:top-[11vw] text-2xl md:text-[4vw] font-normal text-primary-brown font-[family-name:var(--font-marons-regular)]">
                             bk 2026
                         </p>
                     </div>
 
-                    <p className="text-[1.5vw] mt-[6vw] text-end font-normal">
+                    <p className="text-sm md:text-[1.5vw] mt-8 md:mt-[6vw] text-center md:text-end font-normal">
                         Balik Kampoeng 2026 will head to Boyolali, a vibrant
                         community known for its rich culture and warm-hearted
                         residents. Volunteers will engage in projects that
@@ -123,27 +126,28 @@ export default function Home() {
             </div>
 
             {/* Make a difference */}
-            <div className="flex flex-col items-center w-full h-full my-20 px-32">
-                <h1 className="text-[4rem] font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)]">
+            <div className="flex flex-col items-center w-full h-full py-12 md:my-20 px-6 md:px-32">
+                <h1 className="text-3xl md:text-[4rem] font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
                     Make a difference
                 </h1>
-                <p className="text-xl text-center font-light text-primary-brown mt-6">
+                <p className="text-base md:text-xl text-center font-light text-primary-brown mt-4 md:mt-6">
                     Your support enables us to empower communities, enhance
                     education, and promote sustainability.
-                    <br />
+                    <br className="hidden md:block" />
+                    <span className="md:hidden"> </span>
                     Partner with us or contribute today to create lasting impact
                     where it&apos;s needed most.
                 </p>
-                <div className="flex flex-row gap-8">
+                <div className="flex flex-col sm:flex-row gap-4 md:gap-8 w-full sm:w-auto">
                     <Button
                         variant="outline"
-                        className="text-xl p-5 font-bold rounded-full mt-8 hover:shadow-lg"
+                        className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
                     >
                         DONATE
                     </Button>
                     <Button
                         variant="outline"
-                        className="text-xl p-5 font-bold rounded-full mt-8 hover:shadow-lg"
+                        className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full sm:mt-6 md:mt-8 hover:shadow-lg"
                     >
                         PARTNERSHIPS
                     </Button>

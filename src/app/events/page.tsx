@@ -76,10 +76,13 @@ export default function EventsPage() {
         <>
             <Header title="Past Events" description={headerDescription} />
 
-            <div className="flex flex-col items-center py-8 px-8 text-primary-brown">
+            <div className="flex flex-col items-center py-8 px-4 sm:px-8 text-primary-brown">
                 {eventsData.map((yearData, yearIndex) => (
-                    <div key={yearData.year} className="w-full max-w-4xl mb-12">
-                        <h2 className="text-[5rem] font-normal text-center mb-8 font-[family-name:var(--font-marons-regular)]">
+                    <div
+                        key={yearData.year}
+                        className="w-full max-w-4xl mb-8 md:mb-12"
+                    >
+                        <h2 className="text-4xl sm:text-5xl md:text-[5rem] font-normal text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                             {yearData.year}
                         </h2>
 
@@ -87,7 +90,7 @@ export default function EventsPage() {
                             {/* Middle Line */}
                             <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-primary-brown h-full hidden md:block" />
 
-                            <div className="space-y-12">
+                            <div className="space-y-8 md:space-y-12">
                                 {yearData.events.map((event, eventIndex) => (
                                     <div
                                         key={`${yearData.year}-${eventIndex}`}
@@ -111,7 +114,7 @@ export default function EventsPage() {
                                         {/* Right text */}
                                         <div className="w-full md:w-[45%] md:pl-4">
                                             {/* Mobile image */}
-                                            <div className="md:hidden relative w-full h-40 mb-4">
+                                            <div className="md:hidden relative w-full h-32 sm:h-40 mb-4 rounded-lg overflow-hidden">
                                                 <Image
                                                     src={event.imageUrl}
                                                     alt={`${event.eventType}: ${event.eventName}`}

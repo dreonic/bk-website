@@ -62,7 +62,7 @@ const DEPARTMENTS: Department[] = [
         label: "Project",
         title: "project directors",
         groupPhoto: "/committee/project-group.jpg",
-        gridCols: "grid-cols-3",
+        gridCols: "grid-cols-2 sm:grid-cols-2 md:grid-cols-3",
         members: [
             { name: "Alexander Wibowo Pribadi", image: "/committee/alex.jpg" },
             {
@@ -102,19 +102,19 @@ export default function CommitteePage() {
                 title="Our Committee"
                 description="Behind every Balik Kampoeng project is a passionate team of students united by a shared purpose: to serve, learn, and grow with the community. Our committee brings together diverse individuals, each contributing unique skills and perspectives to create meaningful impact."
             />
-            <div className="flex flex-col items-center py-12 px-8 w-full px-24">
+            <div className="flex flex-col items-center py-8 md:py-12 px-4 sm:px-8 md:px-24 w-full">
                 <ToggleGroup
                     items={DEPARTMENTS.map((d) => d.label)}
                     value={selectedDepartment}
                     onChange={setSelectedDepartment}
                 />
 
-                <h2 className="text-4xl md:text-5xl font-extralight text-primary-brown mt-12 mb-8 font-[family-name:var(--font-marons-regular)]">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight text-primary-brown mt-8 md:mt-12 mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                     {currentDepartment?.title}
                 </h2>
 
                 {/* Group Photo */}
-                <div className="relative w-full max-w-3xl h-56 sm:h-72 md:h-96 bg-gray-200 rounded-3xl overflow-hidden mb-20">
+                <div className="relative w-full max-w-3xl h-48 sm:h-56 md:h-72 lg:h-96 bg-gray-200 rounded-xl md:rounded-3xl overflow-hidden mb-12 md:mb-20">
                     {currentDepartment?.groupPhoto && (
                         <Image
                             src={currentDepartment.groupPhoto}
@@ -139,10 +139,10 @@ export default function CommitteePage() {
                             />
                         </div>
 
-                        <h3 className="text-3xl font-extralight text-primary-brown mt-4 -mb-4 font-[family-name:var(--font-marons-regular)]">
+                        <h3 className="text-2xl md:text-3xl font-extralight text-primary-brown mt-4 -mb-2 md:-mb-4 font-[family-name:var(--font-marons-regular)]">
                             vice-president (external)
                         </h3>
-                        <div className="flex flex-row w-full justify-between">
+                        <div className="flex flex-col sm:flex-row gap-8 w-full justify-center sm:justify-between items-center">
                             <div>
                                 <MemberCard
                                     key={currentDepartment.members[1].name}
@@ -161,10 +161,10 @@ export default function CommitteePage() {
                             </div>
                         </div>
 
-                        <h3 className="text-3xl font-extralight text-primary-brown mt-4 -mb-4 font-[family-name:var(--font-marons-regular)]">
+                        <h3 className="text-2xl md:text-3xl font-extralight text-primary-brown mt-4 -mb-2 md:-mb-4 font-[family-name:var(--font-marons-regular)]">
                             vice-president (internal)
                         </h3>
-                        <div className="flex flex-row w-full justify-between">
+                        <div className="flex flex-col sm:flex-row gap-8 w-full justify-center sm:justify-between items-center">
                             <div>
                                 <MemberCard
                                     key={currentDepartment.members[3].name}
@@ -186,7 +186,7 @@ export default function CommitteePage() {
                 {/* Other Departments */}
                 {currentDepartment?.label !== "TOPS" && (
                     <div
-                        className={`grid ${currentDepartment?.gridCols} gap-16 justify-center`}
+                        className={`grid grid-cols-2 ${currentDepartment?.gridCols} gap-6 md:gap-16 justify-center`}
                     >
                         {currentDepartment?.members.map((member) => (
                             <MemberCard

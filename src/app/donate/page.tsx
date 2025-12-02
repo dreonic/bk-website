@@ -27,8 +27,8 @@ export default function DonatePage() {
         <>
             <Header title="Donation" description={headerDescription} />
 
-            <div className="flex flex-col items-center py-16 px-8 text-primary-brown">
-                <div className="relative w-full max-w-2xl h-64 md:h-80 rounded-lg overflow-hidden mb-8">
+            <div className="flex flex-col items-center py-8 md:py-16 px-4 sm:px-8 text-primary-brown">
+                <div className="relative w-full max-w-2xl h-48 sm:h-64 md:h-80 rounded-lg overflow-hidden mb-6 md:mb-8">
                     <Image
                         src="/donate/donation-hero.jpg"
                         alt="Donation impact"
@@ -37,7 +37,7 @@ export default function DonatePage() {
                     />
                 </div>
 
-                <div className="text-center max-w-2xl mb-12">
+                <div className="text-center max-w-2xl mb-8 md:mb-12">
                     <p className="text-sm md:text-base text-primary-brown">
                         No matter the size, every donation plays a vital role in
                         supporting our mission. Your generosity helps provide
@@ -47,7 +47,7 @@ export default function DonatePage() {
                     </p>
                 </div>
 
-                <div className="text-center max-w-2xl mb-16">
+                <div className="text-center max-w-2xl mb-12 md:mb-16">
                     <p className="text-sm md:text-base text-primary-brown">
                         We accept donation via{" "}
                         <strong className="font-bold">Bank BCA (IDR)</strong>{" "}

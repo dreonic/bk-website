@@ -6,10 +6,10 @@ const SubmissionConfirmation: React.FC<SubmissionConfirmationProps> = ({
     email,
 }) => {
     return (
-        <div className="text-center py-8">
+        <div className="text-center py-6 sm:py-8">
             <div className="mb-4">
                 <svg
-                    className="w-16 h-16 mx-auto text-primary-gold stroke-2"
+                    className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-primary-gold stroke-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -22,10 +22,10 @@ const SubmissionConfirmation: React.FC<SubmissionConfirmationProps> = ({
                     />
                 </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 font-[family-name:var(--font-gotham-medium)]">
+            <h3 className="text-lg sm:text-xl font-bold mb-2 font-[family-name:var(--font-gotham-medium)]">
                 Thank You!
             </h3>
-            <p className="text-sm">
+            <p className="text-xs sm:text-sm">
                 Your submission has been received. Our team will reach out to
                 you at {email} shortly.
             </p>

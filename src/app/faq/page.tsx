@@ -40,9 +40,9 @@ export default function FAQPage() {
         <>
             <Header title="FAQ" description={headerDescription} />
 
-            <div className="flex flex-col items-center py-16 px-8 text-primary-brown">
+            <div className="flex flex-col items-center py-8 md:py-16 px-4 sm:px-8 text-primary-brown">
                 {/* Hero Image */}
-                <div className="relative w-full max-w-2xl h-64 md:h-80 mb-12">
+                <div className="relative w-full max-w-2xl h-48 sm:h-64 md:h-80 mb-8 md:mb-12 rounded-lg overflow-hidden">
                     <Image
                         src="/faq/faq-hero.jpg"
                         alt="FAQ Hero"
@@ -52,16 +52,16 @@ export default function FAQPage() {
                 </div>
 
                 {/* Accordion */}
-                <div className="w-full max-w-2xl mb-16">
+                <div className="w-full max-w-2xl mb-12 md:mb-16">
                     <Accordion items={faqItems} />
                 </div>
 
                 {/* Question Form */}
-                <div className="w-full max-w-md">
-                    <h2 className="text-[2rem] md:text-[3rem] font-bold text-center mb-4 font-[family-name:var(--font-gotham-medium)]">
+                <div className="w-full max-w-md px-4 sm:px-0">
+                    <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] font-bold text-center mb-4 font-[family-name:var(--font-gotham-medium)]">
                         Have a Question?
                     </h2>
-                    <p className="text-base text-center mb-8">
+                    <p className="text-sm sm:text-base text-center mb-6 md:mb-8">
                         Can&apos;t find the answer you&apos;re looking for?
                         Submit your question and we&apos;ll get back to you.
                     </p>
@@ -69,9 +69,12 @@ export default function FAQPage() {
                     {isSubmitted ? (
                         <SubmissionConfirmation email={email} />
                     ) : (
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="space-y-4 sm:space-y-6"
+                        >
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Name<span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -83,7 +86,7 @@ export default function FAQPage() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Email<span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -95,7 +98,7 @@ export default function FAQPage() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Your Question
                                     <span className="text-red-500">*</span>
                                 </label>

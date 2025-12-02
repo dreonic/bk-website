@@ -18,12 +18,12 @@ const DonationMethod: React.FC<DonationMethodProps> = ({
     bankName,
 }) => {
     return (
-        <div className="w-full max-w-2xl mb-16 text-primary-brown">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 font-[family-name:var(--font-gotham-medium)]">
+        <div className="w-full max-w-2xl mb-12 md:mb-16 text-primary-brown">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8 font-[family-name:var(--font-gotham-medium)]">
                 {title}
             </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                <div className="relative w-40 h-40 bg-gray-200">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 bg-gray-200">
                     <Image
                         src={qrCodeSrc}
                         alt={qrCodeAlt}
@@ -31,7 +31,7 @@ const DonationMethod: React.FC<DonationMethodProps> = ({
                         className="object-contain"
                     />
                 </div>
-                <div className="text-sm md:text-base">
+                <div className="text-sm md:text-base text-center md:text-left">
                     <p>Account name: {accountName}</p>
                     <p>Account number: {accountNumber}</p>
                     <p>{bankName}</p>

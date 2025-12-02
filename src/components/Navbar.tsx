@@ -2,11 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
+import MobileSidebar from "./MobileSidebar";
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="flex justify-between items-center px-5 py-1.5 bg-white border-b border-gray-300">
-            <div className="w-36 mx-4">
+        <nav className="flex justify-between items-center px-4 md:px-5 py-1.5 bg-white border-b border-gray-300">
+            <div className="w-24 md:w-36 mx-2 md:mx-4">
                 <Link href="/">
                     <Image
                         src="/bk-logo.png"
@@ -17,7 +18,9 @@ const Navbar: React.FC = () => {
                     />
                 </Link>
             </div>
-            <ul className="flex flex-row items-center text-sm list-none m-0 p-0 gap-8 text-black">
+
+            {/* Desktop Navigation */}
+            <ul className="hidden md:flex flex-row items-center text-sm list-none m-0 p-0 gap-8 text-black">
                 <li className="hover:scale-103 transition-transform">
                     <Link href="/events">PAST EVENTS</Link>
                 </li>
@@ -41,6 +44,11 @@ const Navbar: React.FC = () => {
                     </Link>
                 </li>
             </ul>
+
+            {/* Mobile Navigation */}
+            <div className="md:hidden">
+                <MobileSidebar />
+            </div>
         </nav>
     );
 };

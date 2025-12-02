@@ -10,7 +10,7 @@ interface MemberCardProps {
 const MemberCard: React.FC<MemberCardProps> = ({ name, subtitle, image }) => {
     return (
         <div className="flex flex-col items-center gap-2">
-            <div className="relative bg-gray-200 rounded-2xl overflow-hidden w-45 h-60">
+            <div className="relative bg-gray-200 rounded-xl md:rounded-2xl overflow-hidden w-32 h-44 sm:w-36 sm:h-48 md:w-45 md:h-60">
                 {image && (
                     <Image
                         src={image}
@@ -21,11 +21,11 @@ const MemberCard: React.FC<MemberCardProps> = ({ name, subtitle, image }) => {
                 )}
             </div>
             <div className="text-center">
-                <p className="text-xs text-primary-brown font-semibold font-[family-name:var(--font-gotham-medium)]">
+                <p className="text-[10px] sm:text-xs text-primary-brown font-semibold font-[family-name:var(--font-gotham-medium)]">
                     {name}
                 </p>
                 {subtitle && (
-                    <p className="text-xs text-primary-brown/70 font-[family-name:var(--font-gotham-book)]">
+                    <p className="text-[10px] sm:text-xs text-primary-brown/70 font-[family-name:var(--font-gotham-book)]">
                         {subtitle}
                     </p>
                 )}

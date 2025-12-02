@@ -69,17 +69,20 @@ export default function PartnershipPage() {
         <>
             <Header title="Partnerships" description={headerDescription} />
 
-            <div className="flex flex-col items-center py-16 px-8 text-primary-brown">
+            <div className="flex flex-col items-center py-8 md:py-16 px-4 sm:px-8 text-primary-brown">
                 {partnerSections.map((section, index) => (
-                    <div key={index} className="w-full max-w-4xl mb-16">
-                        <h2 className="text-[2rem] md:text-[3rem] text-center mb-8 font-[family-name:var(--font-marons-regular)]">
+                    <div
+                        key={index}
+                        className="w-full max-w-4xl mb-12 md:mb-16"
+                    >
+                        <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                             {section.title}
                         </h2>
-                        <div className="flex flex-wrap justify-center items-center gap-8">
+                        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
                             {section.logos.map((logo, logoIndex) => (
                                 <div
                                     key={logoIndex}
-                                    className="relative w-24 h-24 md:w-32 md:h-32"
+                                    className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32"
                                 >
                                     <Image
                                         src={logo}
@@ -94,27 +97,30 @@ export default function PartnershipPage() {
                 ))}
 
                 {/* Media Partnerships Section */}
-                <div className="w-full max-w-4xl mb-24">
-                    <h2 className="text-[2rem] md:text-[3rem] text-center mb-6 font-[family-name:var(--font-marons-regular)]">
+                <div className="w-full max-w-4xl mb-16 md:mb-24">
+                    <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-4 md:mb-6 font-[family-name:var(--font-marons-regular)]">
                         Media Partnerships
                     </h2>
-                    <p className="text-lg text-center leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg text-center leading-relaxed">
                         {mediaPartnershipDescription}
                     </p>
                 </div>
 
                 {/* Contact Form */}
-                <div className="w-full max-w-md">
-                    <h2 className="text-[2rem] md:text-[3rem] text-center mb-8 font-[family-name:var(--font-marons-regular)]">
+                <div className="w-full max-w-md px-4 sm:px-0">
+                    <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                         Contact Us
                     </h2>
 
                     {isSubmitted ? (
                         <SubmissionConfirmation email={email} />
                     ) : (
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="space-y-4 sm:space-y-6"
+                        >
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Name<span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -126,7 +132,7 @@ export default function PartnershipPage() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Email<span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -138,7 +144,7 @@ export default function PartnershipPage() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Organisation
                                     <span className="text-red-500">*</span>
                                 </label>
@@ -153,7 +159,7 @@ export default function PartnershipPage() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-base mb-1">
+                                <label className="block text-sm sm:text-base mb-1">
                                     Message
                                     <span className="text-red-500">*</span>
                                 </label>

@@ -52,12 +52,15 @@ const StatisticsItem: React.FC<StatisticsItemProps> = ({
     }, [number, duration, hasAnimated]);
 
     return (
-        <div ref={ref} className="flex flex-col items-center w-64 gap-2">
-            <span className="text-6xl md:text-7xl font-bold text-secondary-gold font-[family-name:var(--font-gotham-medium)]">
+        <div
+            ref={ref}
+            className="flex flex-col items-center w-full md:w-64 gap-1 md:gap-2"
+        >
+            <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-gold font-[family-name:var(--font-gotham-medium)]">
                 {count}
                 {showPlus && "+"}
             </span>
-            <p className="text-2xl font-medium text-white text-primary-brown-foreground text-center w-3/4">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-white text-primary-brown-foreground text-center w-full md:w-3/4">
                 {label}
             </p>
         </div>

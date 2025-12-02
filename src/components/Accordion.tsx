@@ -25,20 +25,22 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
                 <div key={index} className="border-b border-gray-300">
                     <button
                         onClick={() => toggleItem(index)}
-                        className="w-full flex items-center justify-between py-4 text-left"
+                        className="w-full flex items-center justify-between py-3 sm:py-4 text-left cursor-pointer"
                     >
-                        <span className="text-2xl font-semibold font-[family-name:var(--font-gotham-medium)]">
+                        <span className="text-base sm:text-lg md:text-2xl font-semibold font-[family-name:var(--font-gotham-medium)] pr-4">
                             {item.question}
                         </span>
                         {openIndex === index ? (
-                            <ChevronUp className="w-5 h-5 flex-shrink-0" />
+                            <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                         ) : (
-                            <ChevronDown className="w-5 h-5 flex-shrink-0" />
+                            <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                         )}
                     </button>
                     {openIndex === index && (
-                        <div className="pb-4">
-                            <p className="text-base">{item.answer}</p>
+                        <div className="pb-3 sm:pb-4">
+                            <p className="text-sm sm:text-base">
+                                {item.answer}
+                            </p>
                         </div>
                     )}
                 </div>
