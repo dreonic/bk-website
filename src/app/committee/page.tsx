@@ -127,7 +127,7 @@ export default function CommitteePage() {
 
                 {/* TOPS */}
                 {currentDepartment?.label === "TOPS" && (
-                    <div className="flex flex-col gap-8 w-2/5 items-center">
+                    <div className="flex flex-col gap-8 w-108 items-center">
                         <h3 className="text-3xl font-extralight text-primary-brown mt-4 -mb-4 font-[family-name:var(--font-marons-regular)]">
                             president
                         </h3>

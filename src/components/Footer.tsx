@@ -16,56 +16,56 @@ const Footer: React.FC = () => {
                                 target="_blank"
                                 className="hover:opacity-80 transition-opacity"
                             >
-                                <Instagram size={24} />
+                                <Instagram size={30} />
                             </Link>
                             <Link
                                 href="mailto:contact@balikkampoeng.org"
                                 className="hover:opacity-80 transition-opacity"
                             >
-                                <Mail size={24} />
+                                <Mail size={30} />
                             </Link>
                             <Link
                                 href="https://t.me/balikkampoeng_bk"
                                 target="_blank"
                                 className="hover:opacity-80 transition-opacity"
                             >
-                                <Send size={24} />
+                                <Send size={30} />
                             </Link>
                         </div>
                     </div>
 
                     {/* Navigation links */}
                     <div className="flex gap-24">
-                        <div className="flex flex-col gap-4 w-[14vw]">
+                        <div className="flex flex-col gap-4 w-[14rem]">
                             <Link
-                                href="/past-events"
-                                className="text-[1.25vw] font-medium tracking-wider hover:opacity-80 transition-opacity"
+                                href="/events"
+                                className="text-xl font-medium tracking-wider hover:opacity-80 transition-opacity"
                             >
                                 PAST EVENTS
                             </Link>
                             <Link
                                 href="/partnerships"
-                                className="text-[1.25vw] font-medium tracking-wider hover:opacity-80 transition-opacity"
+                                className="text-xl font-medium tracking-wider hover:opacity-80 transition-opacity"
                             >
                                 PARTNERSHIPS
                             </Link>
                             <Link
                                 href="/committee"
-                                className="text-[1.25vw] font-medium tracking-wider hover:opacity-80 transition-opacity"
+                                className="text-xl font-medium tracking-wider hover:opacity-80 transition-opacity"
                             >
                                 OUR COMMITTEEE
                             </Link>
                         </div>
-                        <div className="flex flex-col gap-4 w-[14vw]">
+                        <div className="flex flex-col gap-4 w-[14rem]">
                             <Link
                                 href="/faq"
-                                className="text-[1.25vw] font-medium tracking-wider hover:opacity-80 transition-opacity"
+                                className="text-xl font-medium tracking-wider hover:opacity-80 transition-opacity"
                             >
                                 FAQ
                             </Link>
                             <Link
                                 href="/support"
-                                className="text-[1.25vw] font-medium tracking-wider hover:opacity-80 transition-opacity"
+                                className="text-xl font-medium tracking-wider hover:opacity-80 transition-opacity"
                             >
                                 SUPPORT US
                             </Link>

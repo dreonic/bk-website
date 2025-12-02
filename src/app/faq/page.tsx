@@ -16,7 +16,7 @@ const faqItems = [
     },
     {
         question: "What do you do in Balik Kampoeng as a volunteer?",
-        answer: "As a volunteer, you'll participate in community service activities focused on education, environmental sustainability, and community empowerment. This includes teaching, organizing events, and working directly with local communities in Indonesia.",
+        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
         question: "lorem ipsum",

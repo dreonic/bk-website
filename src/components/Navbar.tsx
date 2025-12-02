@@ -18,23 +18,23 @@ const Navbar: React.FC = () => {
                 </Link>
             </div>
             <ul className="flex flex-row items-center text-sm list-none m-0 p-0 gap-8 text-black">
-                <li className="hover:underline hover:opacity-80 transition-opacity">
+                <li className="hover:scale-103 transition-transform">
                     <Link href="/events">PAST EVENTS</Link>
                 </li>
-                <li className="hover:underline hover:opacity-80 transition-opacity">
+                <li className="hover:scale-103 transition-transform">
                     <Link href="/partnerships">PARTNERSHIPS</Link>
                 </li>
-                <li className="hover:underline hover:opacity-80 transition-opacity">
+                <li className="hover:scale-103 transition-transform">
                     <Link href="/committee">OUR COMMITTEE</Link>
                 </li>
-                <li className="hover:underline hover:opacity-80 transition-opacity">
+                <li className="hover:scale-103 transition-transform">
                     <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
                     <Link href="/donate">
                         <Button
                             variant="highlighted"
-                            className="font-medium rounded-full"
+                            className="font-medium rounded-full hover:scale-103 transition-transform"
                         >
                             DONATE
                         </Button>
