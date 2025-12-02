@@ -3,6 +3,7 @@ import LandingPage from "@/components/LandingPage";
 import Image from "next/image";
 import StatisticsItem from "@/components/StatisticsItem";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -139,18 +140,22 @@ export default function Home() {
                     where it&apos;s needed most.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 md:gap-8 w-full sm:w-auto">
-                    <Button
-                        variant="outline"
-                        className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
-                    >
-                        DONATE
-                    </Button>
-                    <Button
-                        variant="outline"
-                        className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full sm:mt-6 md:mt-8 hover:shadow-lg"
-                    >
-                        PARTNERSHIPS
-                    </Button>
+                    <Link href="/donate">
+                        <Button
+                            variant="outline"
+                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
+                        >
+                            DONATE
+                        </Button>
+                    </Link>
+                    <Link href="/partnerships">
+                        <Button
+                            variant="outline"
+                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full sm:mt-6 md:mt-8 hover:shadow-lg"
+                        >
+                            PARTNERSHIPS
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>
