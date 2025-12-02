@@ -7,11 +7,11 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title, description }) => {
     return (
-        <div className="flex flex-col items-center w-full bg-primary-brown text-white pt-[5vw] pb-[4vw]">
-            <h1 className="text-[7vw] font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)]">
+        <div className="flex flex-col items-center w-full bg-primary-brown text-white pt-16 pb-12 gap-2">
+            <h1 className="text-[6rem] font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)]">
                 {title}
             </h1>
-            <p className="text-[1.125vw] text-center text-secondary-beige w-3/4 md:w-1/2 font-[family-name:var(--font-gotham-book)] whitespace-pre-line">
+            <p className="text-sm text-center text-secondary-beige w-3/4 md:w-1/2 whitespace-pre-line">
                 {description}
             </p>
         </div>
