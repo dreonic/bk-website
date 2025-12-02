@@ -141,3 +141,9 @@
         @apply bg-background text-foreground;
     }
 }
+
+@keyframes checkmark {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
