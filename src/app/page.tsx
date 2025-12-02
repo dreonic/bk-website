@@ -1,5 +1,4 @@
 import LandingPage from "@/components/LandingPage";
-import Footer from "@/components/Footer";
 
 import Image from "next/image";
 import StatisticsItem from "@/components/StatisticsItem";
@@ -9,7 +8,6 @@ export default function Home() {
     return (
         <div>
             <LandingPage />
-            {/* <Footer /> */}
 
             {/* Our Programme */}
             <div className="flex flex-col items-center w-full h-144 pt-15 gap-8">
