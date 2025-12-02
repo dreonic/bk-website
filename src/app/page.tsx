@@ -71,10 +71,14 @@ export default function Home() {
 
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center bg-primary-brown py-12 md:py-24 gap-8 md:gap-16">
-                <StatisticsItem number={6} label="Cities" />
-                <StatisticsItem number={14} label="NGOs" />
-                <StatisticsItem number={300} label="Volunteers" showPlus />
-                <StatisticsItem number={200} label="People Reached" showPlus />
+                <StatisticsItem number={10} label="Cities" />
+                <StatisticsItem number={14} label="NGO Partners" />
+                <StatisticsItem
+                    number={300}
+                    label="Dedicated Volunteers"
+                    showPlus
+                />
+                <StatisticsItem number={800} label="Lives Impacted" showPlus />
                 <StatisticsItem number={20} label="Environmental Projects" />
                 <StatisticsItem number={13} label="Villages Visited" />
             </div>
