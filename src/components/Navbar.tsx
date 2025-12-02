@@ -17,37 +17,28 @@ const Navbar: React.FC = () => {
                     />
                 </Link>
             </div>
-            <ul className="flex list-none m-0 p-0 text-black">
+            <ul className="flex flex-row items-center text-sm list-none m-0 p-0 gap-8 text-black">
+                <li className="hover:underline hover:opacity-80 transition-opacity">
+                    <Link href="/events">PAST EVENTS</Link>
+                </li>
+                <li className="hover:underline hover:opacity-80 transition-opacity">
+                    <Link href="/partnerships">PARTNERSHIPS</Link>
+                </li>
+                <li className="hover:underline hover:opacity-80 transition-opacity">
+                    <Link href="/committee">OUR COMMITTEE</Link>
+                </li>
+                <li className="hover:underline hover:opacity-80 transition-opacity">
+                    <Link href="/faq">FAQ</Link>
+                </li>
                 <li>
-                    <Button
-                        variant="ghost"
-                        className="text-sm font-medium mx-0"
-                    >
-                        PAST EVENTS
-                    </Button>
-                </li>
-                <li className="ml-5">
-                    <Button variant="ghost" className="text-sm font-medium">
-                        PARTNERSHIPS
-                    </Button>
-                </li>
-                <li className="ml-5">
-                    <Button variant="ghost" className="text-sm font-medium">
-                        COMMITTEE
-                    </Button>
-                </li>
-                <li className="ml-5">
-                    <Button variant="ghost" className="text-sm font-medium">
-                        FAQ
-                    </Button>
-                </li>
-                <li className="ml-5">
-                    <Button
-                        variant="highlighted"
-                        className="text-sm font-medium rounded-full"
-                    >
-                        DONATE
-                    </Button>
+                    <Link href="/donate">
+                        <Button
+                            variant="highlighted"
+                            className="font-medium rounded-full"
+                        >
+                            DONATE
+                        </Button>
+                    </Link>
                 </li>
             </ul>
         </nav>
