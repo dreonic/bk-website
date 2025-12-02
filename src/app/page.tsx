@@ -70,18 +70,18 @@ export default function Home() {
 
             {/* Statistics */}
             <div className="grid md:grid-cols-3 sm:grid-cols-2 w-full px-32 justify-items-center bg-primary-brown py-24 gap-16">
-                <StatisticsItem number="6" label="Cities" />
-                <StatisticsItem number="14" label="NGOs" />
-                <StatisticsItem number="300+" label="Volunteers" />
-                <StatisticsItem number="200+" label="People Reached" />
-                <StatisticsItem number="20" label="Environmental Projects" />
-                <StatisticsItem number="13" label="Villages Visited" />
+                <StatisticsItem number={6} label="Cities" />
+                <StatisticsItem number={14} label="NGOs" />
+                <StatisticsItem number={300} label="Volunteers" showPlus />
+                <StatisticsItem number={200} label="People Reached" showPlus />
+                <StatisticsItem number={20} label="Environmental Projects" />
+                <StatisticsItem number={13} label="Villages Visited" />
             </div>
 
             {/* Impact */}
 
             <div className="flex flex-col items-center w-full h-144 pt-15 gap-8">
-                <h1 className="text-6xl md:text-7xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                <h1 className="text-[4rem] font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     Impact
                 </h1>
             </div>
@@ -121,29 +121,29 @@ export default function Home() {
                     </p>
                 </div>
             </div>
-            {/* Make a difference */}
 
-            <div className="flex flex-col items-center w-full h-[30vw] py-16 px-32">
-                <h1 className="text-[5vw] font-light text-primary-brown font-[family-name:var(--font-marons-regular)]">
+            {/* Make a difference */}
+            <div className="flex flex-col items-center w-full h-full my-20 px-32">
+                <h1 className="text-[4rem] font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)]">
                     Make a difference
                 </h1>
-                <p className="text-[1.5vw] text-center font-light text-primary-brown mt-6">
+                <p className="text-xl text-center font-light text-primary-brown mt-6">
                     Your support enables us to empower communities, enhance
                     education, and promote sustainability.
                     <br />
                     Partner with us or contribute today to create lasting impact
                     where it&apos;s needed most.
                 </p>
-                <div className="flex flex-row gap-[2vw]">
+                <div className="flex flex-row gap-8">
                     <Button
                         variant="outline"
-                        className="text-[1.25vw] p-5 font-bold rounded-full mt-8"
+                        className="text-xl p-5 font-bold rounded-full mt-8 hover:shadow-lg"
                     >
                         DONATE
                     </Button>
                     <Button
                         variant="outline"
-                        className="text-[1.25vw] p-5 font-bold rounded-full mt-8"
+                        className="text-xl p-5 font-bold rounded-full mt-8 hover:shadow-lg"
                     >
                         PARTNERSHIPS
                     </Button>

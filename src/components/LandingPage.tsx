@@ -1,4 +1,6 @@
 import React from "react";
+import { ChevronsDown } from "lucide-react";
+import Image from "next/image";
 
 const LandingPage: React.FC = () => {
     return (
@@ -8,6 +10,21 @@ const LandingPage: React.FC = () => {
                 className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat opacity-75"
                 style={{ backgroundImage: "url(/landing-page.png)" }}
             />
+
+            {/* Donate Here text */}
+            <div className="absolute top-16  right-8 flex flex-col items-end gap-2 text-primary-brown z-10">
+                <Image
+                    src="/curved-arrow.png"
+                    alt="Curved arrow"
+                    className="scale-x-[-1] rotate-65 mr-8"
+                    width={40}
+                    height={40}
+                />
+                <span className="text-base font-base -mt-2 mr-10">
+                    Donate here!
+                </span>
+            </div>
+
             <div className="flex flex-col items-center text-center z-10">
                 <div className="flex items-end -mb-4">
                     <div className="flex flex-col text-left -mr-4 mb-3 -space-y-2">
@@ -33,6 +50,14 @@ const LandingPage: React.FC = () => {
                     reflection of our mission to work hand in hand with rural
                     communities to create meaningful impact.
                 </p>
+            </div>
+
+            {/* Scroll to learn more */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-primary-brown z-10">
+                <span className="text-md font-[family-name:var(--font-gotham-book)] mb-1">
+                    Scroll to learn more
+                </span>
+                <ChevronsDown className="w-5 h-5 animate-bounce" />
             </div>
         </div>
     );
