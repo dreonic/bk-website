@@ -4,6 +4,7 @@ import Image from "next/image";
 import StatisticsItem from "@/components/StatisticsItem";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import ImpactSection from "@/components/ImpactSection";
 
 export default function Home() {
     return (
@@ -84,12 +85,7 @@ export default function Home() {
             </div>
 
             {/* Impact */}
-
-            <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-8">
-                <h1 className="text-3xl md:text-[4rem] font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                    Impact
-                </h1>
-            </div>
+            <ImpactSection />
 
             {/* Boyolali */}
             <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-144 bg-secondary-beige">
