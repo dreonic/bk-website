@@ -1,0 +1,26 @@
+backend:
+    name: github
+    repo: dreonic/bk-website
+    branch: decap-cms
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+    - name: "faq"
+      label: "FAQ"
+      files:
+          - label: "FAQ Content"
+            name: "faq"
+            file: "src/app/faq/content.md"
+            fields:
+                - label: "FAQ Items"
+                  name: "faq"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Question",
+                            name: "question",
+                            widget: "string",
+                        }
+                      - { label: "Answer", name: "answer", widget: "text" }
