@@ -8,12 +8,13 @@ import SubmissionConfirmation from "@/components/SubmissionConfirmation";
 import { Button } from "@/components/ui/button";
 import { attributes } from "./content.md";
 
-const headerDescription = `Find the answers to your burning questions here!`;
-
 import type { AccordionItem } from "@/components/Accordion";
 
 export default function FAQPage() {
-    const { faq } = attributes as { faq: AccordionItem[] };
+    const { headerDescription, faq } = attributes as {
+        headerDescription: string;
+        faq: AccordionItem[];
+    };
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [question, setQuestion] = useState("");

@@ -6,12 +6,35 @@ import Header from "@/components/Header";
 import DonationMethod from "@/components/DonationMethod";
 import SubmissionConfirmation from "@/components/SubmissionConfirmation";
 import { Button } from "@/components/ui/button";
+import { attributes } from "./content.md";
 
-const headerDescription = `Each year, Balik Kampoeng reach communities in need, creating meaningful impact through initiatives in education, environmental sustainability, and community empowerment. With the support of donors and partners, we are able to extend our reach, bring projects to life, and uplift communities across the region.
-
-Every contribution, no matter how big or small, helps transform lives, nurture potential, and foster lasting change. Join us in making a difference and be part of the journey to create stronger, empowered communities.`;
+interface DonationMethodData {
+    title: string;
+    bankName: string;
+    accountName: string;
+    accountDetails: string;
+    qrCodeSrc?: string;
+}
 
 export default function DonatePage() {
+    const {
+        headerDescription,
+        heroImage,
+        introText,
+        paymentMethodsText,
+        donationMethods,
+        otherMethodsTitle,
+        otherMethodsDescription,
+    } = attributes as {
+        headerDescription: string;
+        heroImage: string;
+        introText: string;
+        paymentMethodsText: string;
+        donationMethods: DonationMethodData[];
+        otherMethodsTitle: string;
+        otherMethodsDescription: string;
+    };
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -52,7 +75,7 @@ export default function DonatePage() {
             <div className="flex flex-col items-center py-8 md:py-16 px-4 sm:px-8 text-primary-brown">
                 <div className="relative w-full max-w-2xl h-48 sm:h-64 md:h-80 rounded-lg overflow-hidden mb-6 md:mb-8">
                     <Image
-                        src="/donate/donation-hero.jpg"
+                        src={heroImage}
                         alt="Donation impact"
                         fill
                         className="object-cover"
@@ -61,53 +84,58 @@ export default function DonatePage() {
 
                 <div className="text-center max-w-2xl mb-8 md:mb-12">
                     <p className="text-sm md:text-base text-primary-brown">
-                        No matter the size, every donation plays a vital role in
-                        supporting our mission. Your generosity helps provide
-                        resources, fund community projects, and empower
-                        individuals, ensuring that our programmes continue to
-                        make a tangible difference where it matters most.
+                        {introText}
                     </p>
                 </div>
 
                 <div className="text-center max-w-2xl mb-12 md:mb-16">
-                    <p className="text-sm md:text-base text-primary-brown">
-                        We accept donation via{" "}
-                        <strong className="font-bold">Bank BCA (IDR)</strong>{" "}
-                        and{" "}
-                        <strong className="font-bold underline">
-                            Bank Transfer/Paynow (SGD)
-                        </strong>
-                        . If you would like to contribute through other methods,
-                        please fill out the form below and our team will reach
-                        out to assist you.
-                    </p>
+                    <p
+                        className="text-sm md:text-base text-primary-brown"
+                        dangerouslySetInnerHTML={{
+                            __html: paymentMethodsText
+                                .replace(
+                                    /\*\*(.*?)\*\*/g,
+                                    "<strong>$1</strong>"
+                                )
+                                .replace(
+                                    /<strong>(.*?)<\/strong>/g,
+                                    (match, text) => {
+                                        if (
+                                            text.includes(
+                                                "Bank Transfer/Paynow"
+                                            )
+                                        ) {
+                                            return `<strong class="font-bold underline">${text}</strong>`;
+                                        }
+                                        return `<strong class="font-bold">${text}</strong>`;
+                                    }
+                                ),
+                        }}
+                    />
                 </div>
 
-                <DonationMethod
-                    title="Bank BCA (IDR)"
-                    bankName="Bank BCA"
-                    accountName="Muhammad Wisnu Darmawan"
-                    accountDetails={`Account number: 468-046-6411
-(please use 001 as the last three digits for easy tracking)`}
-                />
-
-                <DonationMethod
-                    title="Local Transfer (SGD)"
-                    qrCodeSrc="/donate/qr-paynow.jpg"
-                    qrCodeAlt="PayNow QR Code"
-                    bankName="DBS Bank Pte. Ltd."
-                    accountName="Muhammad Wisnu Darmawan"
-                    accountDetails="PayNow Number: +6596860658"
-                />
+                {donationMethods.map((method, index) => (
+                    <DonationMethod
+                        key={index}
+                        title={method.title}
+                        bankName={method.bankName}
+                        accountName={method.accountName}
+                        accountDetails={method.accountDetails}
+                        qrCodeSrc={method.qrCodeSrc || undefined}
+                        qrCodeAlt={
+                            method.qrCodeSrc
+                                ? `${method.title} QR Code`
+                                : undefined
+                        }
+                    />
+                ))}
 
                 <div className="w-full max-w-md">
                     <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 font-[family-name:var(--font-gotham-medium)]">
-                        Other Methods
+                        {otherMethodsTitle}
                     </h2>
                     <p className="text-sm text-center mb-8">
-                        If you are unable to donate through the above methods,
-                        please fill in the form so our team can reach out to you
-                        directly.
+                        {otherMethodsDescription}
                     </p>
 
                     {isSubmitted ? (

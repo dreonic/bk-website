@@ -17,6 +17,11 @@ collections:
             name: "faq"
             file: "src/app/faq/content.md"
             fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
                 - label: "FAQ Items"
                   name: "faq"
                   widget: list
@@ -152,3 +157,68 @@ collections:
                                         widget: "string",
                                         required: false,
                                     }
+
+    - name: "donate"
+      label: "Donate"
+      files:
+          - label: "Donate Content"
+            name: "donate"
+            file: "src/app/donate/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - {
+                      label: "Hero Image",
+                      name: "heroImage",
+                      widget: "image",
+                      media_folder: "/public/donate",
+                      public_folder: "/donate",
+                  }
+                - { label: "Intro Text", name: "introText", widget: "text" }
+                - {
+                      label: "Payment Methods Text",
+                      name: "paymentMethodsText",
+                      widget: "text",
+                      hint: "Use **text** for bold formatting",
+                  }
+                - label: "Donation Methods"
+                  name: "donationMethods"
+                  widget: list
+                  fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - {
+                            label: "Bank Name",
+                            name: "bankName",
+                            widget: "string",
+                        }
+                      - {
+                            label: "Account Name",
+                            name: "accountName",
+                            widget: "string",
+                        }
+                      - {
+                            label: "Account Details",
+                            name: "accountDetails",
+                            widget: "text",
+                        }
+                      - {
+                            label: "QR Code Image",
+                            name: "qrCodeSrc",
+                            widget: "image",
+                            required: false,
+                            media_folder: "/public/donate",
+                            public_folder: "/donate",
+                        }
+                - {
+                      label: "Other Methods Title",
+                      name: "otherMethodsTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Other Methods Description",
+                      name: "otherMethodsDescription",
+                      widget: "text",
+                  }
