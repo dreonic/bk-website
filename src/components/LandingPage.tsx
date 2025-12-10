@@ -2,7 +2,11 @@ import React from "react";
 import { ChevronsDown } from "lucide-react";
 import Image from "next/image";
 
-const LandingPage: React.FC = () => {
+interface LandingPageProps {
+    description: string;
+}
+
+const LandingPage: React.FC<LandingPageProps> = ({ description }) => {
     return (
         <div className="relative h-screen w-full flex flex-col items-center justify-start pt-20 md:pt-24 px-4">
             <div className="absolute inset-0 -z-30 bg-cover bg-center bg-no-repeat bg-[#EFEAD6]" />
@@ -43,12 +47,7 @@ const LandingPage: React.FC = () => {
                     Kampoeng?
                 </h1>
                 <p className="text-xs md:text-sm text-primary w-full px-2 md:w-1/2 mx-auto font-[family-name:var(--font-gotham-book)]">
-                    We are a student-led volunteering organisation dedicated to
-                    giving back to local communities through service, learning,
-                    and cultural exchange. We believe in reconnecting with our
-                    roots; Balik Kampoeng means “returning to the village”, a
-                    reflection of our mission to work hand in hand with rural
-                    communities to create meaningful impact.
+                    {description}
                 </p>
             </div>
 

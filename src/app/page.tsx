@@ -4,83 +4,79 @@ import Image from "next/image";
 import StatisticsItem from "@/components/StatisticsItem";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { attributes } from "./content.md";
+
+interface Programme {
+    title: string;
+    image: string;
+    description: string;
+}
+
+interface Statistic {
+    number: number;
+    label: string;
+    showPlus: boolean;
+}
 
 export default function Home() {
+    const {
+        landingDescription,
+        ourProgrammeTitle,
+        programmes,
+        statistics,
+        makeADifferenceTitle,
+        makeADifferenceDescription,
+    } = attributes as {
+        landingDescription: string;
+        ourProgrammeTitle: string;
+        programmes: Programme[];
+        statistics: Statistic[];
+        makeADifferenceTitle: string;
+        makeADifferenceDescription: string;
+    };
+
     return (
         <div>
-            <LandingPage />
+            <LandingPage description={landingDescription} />
 
             {/* Our Programme */}
             <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-6 md:gap-8 px-4">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                    Our Programme
+                    {ourProgrammeTitle}
                 </h1>
                 <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 mt-4 md:mt-10 w-full">
-                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
-                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                            Beloem BK
-                        </h1>
-                        <Image
-                            src="/landing/our-programme-1.jpg"
-                            alt="Our Programme"
-                            width={144}
-                            height={144}
-                        />
-                        <p className="text-xs md:text-sm font-medium text-center">
-                            BeloemBK is an initiative to foster meaningful
-                            community involvement by offering participants an
-                            opportunity to experience volunteering firsthand.
-                        </p>
-                    </div>
-                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
-                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                            Education
-                        </h1>
-                        <Image
-                            src="/landing/our-programme-2.jpg"
-                            alt="Our Programme"
-                            width={144}
-                            height={144}
-                        />
-                        <p className="text-xs md:text-sm font-medium text-center">
-                            Our Education arm aims to enhance learning
-                            opportunities for the community, providing
-                            programmes and activities that support skill
-                            development and lifelong learning.
-                        </p>
-                    </div>
-                    <div className="flex flex-col w-full max-w-[14rem] items-center gap-2">
-                        <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                            Environment
-                        </h1>
-                        <Image
-                            src="/landing/our-programme-3.jpg"
-                            alt="Environment"
-                            width={144}
-                            height={144}
-                        />
-                        <p className="text-xs md:text-sm font-medium text-center">
-                            Our Environment arm focuses on improving the local
-                            environment through sustainable projects and
-                            initiatives that benefit both the community and the
-                            natural surroundings.
-                        </p>
-                    </div>
+                    {programmes.map((programme, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col w-full max-w-[14rem] items-center gap-2"
+                        >
+                            <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                                {programme.title}
+                            </h1>
+                            <Image
+                                src={programme.image}
+                                alt={programme.title}
+                                width={144}
+                                height={144}
+                            />
+                            <p className="text-xs md:text-sm font-medium text-center">
+                                {programme.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
 
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center bg-primary-brown py-12 md:py-24 gap-8 md:gap-16">
-                <StatisticsItem number={10} label="Cities" />
-                <StatisticsItem number={14} label="NGO Partners" />
-                <StatisticsItem
-                    number={300}
-                    label="Dedicated Volunteers"
-                    showPlus
-                />
-                <StatisticsItem number={800} label="Lives Impacted" showPlus />
-                <StatisticsItem number={20} label="Environmental Projects" />
-                <StatisticsItem number={13} label="Villages Visited" />
+                {statistics.map((stat, index) => (
+                    <StatisticsItem
+                        key={index}
+                        number={stat.number}
+                        label={stat.label}
+                        showPlus={stat.showPlus}
+                    />
+                ))}
             </div>
 
             {/* Impact */}
@@ -133,15 +129,23 @@ export default function Home() {
             {/* Make a difference */}
             <div className="flex flex-col items-center w-full h-full py-12 md:my-20 px-6 md:px-32">
                 <h1 className="text-3xl md:text-[4rem] font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
-                    Make a difference
+                    {makeADifferenceTitle}
                 </h1>
                 <p className="text-base md:text-xl text-center font-light text-primary-brown mt-4 md:mt-6">
-                    Your support enables us to empower communities, enhance
-                    education, and promote sustainability.
-                    <br className="hidden md:block" />
-                    <span className="md:hidden"> </span>
-                    Partner with us or contribute today to create lasting impact
-                    where it&apos;s needed most.
+                    {makeADifferenceDescription
+                        .split(". ")
+                        .map((sentence, idx, arr) => (
+                            <span key={idx}>
+                                {sentence}
+                                {idx < arr.length - 1 && "."}
+                                {idx === 0 && (
+                                    <>
+                                        <br className="hidden md:block" />
+                                        <span className="md:hidden"> </span>
+                                    </>
+                                )}
+                            </span>
+                        ))}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 md:gap-8 w-full sm:w-auto">
                     <Link href="/donate">

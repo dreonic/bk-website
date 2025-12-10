@@ -10,6 +10,69 @@ media_folder: public/img
 public_folder: /img
 
 collections:
+    - name: "home"
+      label: "Home Page"
+      files:
+          - label: "Home Content"
+            name: "home"
+            file: "src/app/content.md"
+            fields:
+                - {
+                      label: "Landing Description",
+                      name: "landingDescription",
+                      widget: "text",
+                      hint: "The description text under 'What is Balik Kampoeng?'",
+                  }
+                - {
+                      label: "Our Programme Title",
+                      name: "ourProgrammeTitle",
+                      widget: "string",
+                  }
+                - label: "Programmes"
+                  name: "programmes"
+                  widget: list
+                  fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - {
+                            label: "Image",
+                            name: "image",
+                            widget: "image",
+                            media_folder: "/public/landing",
+                            public_folder: "/landing",
+                        }
+                      - {
+                            label: "Description",
+                            name: "description",
+                            widget: "text",
+                        }
+                - label: "Statistics"
+                  name: "statistics"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Number",
+                            name: "number",
+                            widget: "number",
+                            value_type: "int",
+                        }
+                      - { label: "Label", name: "label", widget: "string" }
+                      - {
+                            label: "Show Plus Sign",
+                            name: "showPlus",
+                            widget: "boolean",
+                            default: false,
+                        }
+                - {
+                      label: "Make a Difference Title",
+                      name: "makeADifferenceTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Make a Difference Description",
+                      name: "makeADifferenceDescription",
+                      widget: "text",
+                  }
+
     - name: "faq"
       label: "FAQ"
       files:
