@@ -48,39 +48,9 @@ export async function GET(request: NextRequest) {
             );
         }
 
-        // Return HTML that posts message to parent window (Decap CMS)
-        const html = `
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Authenticating...</title>
-</head>
-<body>
-    <script>
-        (function() {
-            function receiveMessage(e) {
-                console.log("receiveMessage", e);
-                window.opener.postMessage(
-                    'authorization:github:success:' + JSON.stringify({
-                        token: "${tokenData.access_token}",
-                        provider: "github"
-                    }),
-                    e.origin
-                );
-                window.removeEventListener("message", receiveMessage, false);
-            }
-            window.addEventListener("message", receiveMessage, false);
-            console.log("Posting message to opener");
-            window.opener.postMessage("authorizing:github", "*");
-        })();
-    </script>
-</body>
-</html>
-        `;
-
-        return new NextResponse(html, {
-            headers: { "Content-Type": "text/html" },
-        });
+        // Redirect to admin with token in URL fragment (for implicit flow compatibility)
+        const adminUrl = `/admin/#access_token=${tokenData.access_token}&token_type=bearer`;
+        return NextResponse.redirect(new URL(adminUrl, request.url));
     } catch (error) {
         console.error("OAuth callback error:", error);
         return NextResponse.json(
