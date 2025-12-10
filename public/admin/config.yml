@@ -27,3 +27,50 @@ collections:
                             widget: "string",
                         }
                       - { label: "Answer", name: "answer", widget: "text" }
+
+    - name: "events"
+      label: "Events"
+      files:
+          - label: "Events Content"
+            name: "events"
+            file: "src/app/events/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Events by Year"
+                  name: "events"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Year",
+                            name: "year",
+                            widget: "number",
+                            value_type: "int",
+                        }
+                      - label: "Year Events"
+                        name: "yearEvents"
+                        widget: list
+                        fields:
+                            - {
+                                  label: "Image URL",
+                                  name: "imageUrl",
+                                  widget: "string",
+                              }
+                            - {
+                                  label: "Event Type",
+                                  name: "eventType",
+                                  widget: "string",
+                              }
+                            - {
+                                  label: "Event Name",
+                                  name: "eventName",
+                                  widget: "string",
+                              }
+                            - {
+                                  label: "Description",
+                                  name: "description",
+                                  widget: "text",
+                              }
