@@ -54,11 +54,14 @@ export async function GET(request: NextRequest) {
 <html>
 <head>
     <title>Authorization Complete</title>
-</head>
-<body>
-    <p>Authorization successful. Closing window...</p>
     <script>
+        // Post message immediately when page loads
         (function() {
+            if (!window.opener) {
+                document.body.innerHTML = "<p>Error: No opener window found. Please close this window and try again.</p>";
+                return;
+            }
+
             function receiveMessage(e) {
                 console.log("receiveMessage", e);
                 // Send success message with token data
@@ -75,10 +78,18 @@ export async function GET(request: NextRequest) {
             window.addEventListener("message", receiveMessage, false);
             
             // Notify opener that we're ready
-            console.log("Sending authorization message");
-            window.opener.postMessage("authorizing:github", "*");
+            console.log("Sending authorization message to opener");
+            try {
+                window.opener.postMessage("authorizing:github", "*");
+            } catch (err) {
+                console.error("Error posting message:", err);
+                document.body.innerHTML = "<p>Error communicating with parent window. Please close this window and try again.</p>";
+            }
         })();
     </script>
+</head>
+<body>
+    <p>Authorization successful. Closing window...</p>
 </body>
 </html>
         `;
