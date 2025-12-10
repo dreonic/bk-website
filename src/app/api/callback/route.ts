@@ -61,10 +61,10 @@ export async function GET(request: NextRequest) {
             function receiveMessage(e) {
                 console.log("receiveMessage", e);
                 window.opener.postMessage(
-                    'authorization:github:success:${JSON.stringify({
-                        token: tokenData.access_token,
-                        provider: "github",
-                    })}',
+                    'authorization:github:success:' + JSON.stringify({
+                        token: "${tokenData.access_token}",
+                        provider: "github"
+                    }),
                     e.origin
                 );
                 window.removeEventListener("message", receiveMessage, false);
