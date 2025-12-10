@@ -1,4 +1,5 @@
 ---
+landingBackgroundImage: /landing-page.png
 landingDescription: 'We are a student-led volunteering organisation dedicated to giving back to local communities through service, learning, and cultural exchange. We believe in reconnecting with our roots; Balik Kampoeng means "returning to the village", a reflection of our mission to work hand in hand with rural communities to create meaningful impact.'
 ourProgrammeTitle: Our Programme
 programmes:

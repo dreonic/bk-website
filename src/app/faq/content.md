@@ -1,5 +1,6 @@
 ---
 headerDescription: "Find the answers to your burning questions here!"
+heroImage: /faq/faq-hero.jpg
 faq:
     - question: How do I join Balik Kampoeng as a volunteer?
       answer:

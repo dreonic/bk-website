@@ -2,9 +2,9 @@ backend:
     name: github
     repo: dreonic/bk-website
     branch: decap-cms
-    base_url: http://localhost:3000
+    base_url: http://bk.juanfrederick.com
     auth_endpoint: api/auth
-    api_root: http://localhost:3000/api/github
+    api_root: http://bk.juanfrederick.com/api/github
 
 media_folder: public/img
 public_folder: /img
@@ -17,6 +17,13 @@ collections:
             name: "home"
             file: "src/app/content.md"
             fields:
+                - {
+                      label: "Landing Background Image",
+                      name: "landingBackgroundImage",
+                      widget: "image",
+                      media_folder: "/public",
+                      public_folder: "/",
+                  }
                 - {
                       label: "Landing Description",
                       name: "landingDescription",
@@ -84,6 +91,13 @@ collections:
                       label: "Header Description",
                       name: "headerDescription",
                       widget: "text",
+                  }
+                - {
+                      label: "Hero Image",
+                      name: "heroImage",
+                      widget: "image",
+                      media_folder: "/public/faq",
+                      public_folder: "/faq",
                   }
                 - label: "FAQ Items"
                   name: "faq"

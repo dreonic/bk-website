@@ -4,15 +4,19 @@ import Image from "next/image";
 
 interface LandingPageProps {
     description: string;
+    backgroundImage: string;
 }
 
-const LandingPage: React.FC<LandingPageProps> = ({ description }) => {
+const LandingPage: React.FC<LandingPageProps> = ({
+    description,
+    backgroundImage,
+}) => {
     return (
         <div className="relative h-screen w-full flex flex-col items-center justify-start pt-20 md:pt-24 px-4">
             <div className="absolute inset-0 -z-30 bg-cover bg-center bg-no-repeat bg-[#EFEAD6]" />
             <div
                 className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat opacity-75"
-                style={{ backgroundImage: "url(/landing-page.png)" }}
+                style={{ backgroundImage: `url(${backgroundImage})` }}
             />
 
             {/* Donate Here text - hidden on mobile */}

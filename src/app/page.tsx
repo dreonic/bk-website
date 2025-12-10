@@ -20,6 +20,7 @@ interface Statistic {
 
 export default function Home() {
     const {
+        landingBackgroundImage,
         landingDescription,
         ourProgrammeTitle,
         programmes,
@@ -27,6 +28,7 @@ export default function Home() {
         makeADifferenceTitle,
         makeADifferenceDescription,
     } = attributes as {
+        landingBackgroundImage: string;
         landingDescription: string;
         ourProgrammeTitle: string;
         programmes: Programme[];
@@ -37,7 +39,10 @@ export default function Home() {
 
     return (
         <div>
-            <LandingPage description={landingDescription} />
+            <LandingPage
+                description={landingDescription}
+                backgroundImage={landingBackgroundImage}
+            />
 
             {/* Our Programme */}
             <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-6 md:gap-8 px-4">

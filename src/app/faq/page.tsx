@@ -11,8 +11,9 @@ import { attributes } from "./content.md";
 import type { AccordionItem } from "@/components/Accordion";
 
 export default function FAQPage() {
-    const { headerDescription, faq } = attributes as {
+    const { headerDescription, heroImage, faq } = attributes as {
         headerDescription: string;
+        heroImage: string;
         faq: AccordionItem[];
     };
     const [name, setName] = useState("");
@@ -53,7 +54,7 @@ export default function FAQPage() {
                 {/* Hero Image */}
                 <div className="relative w-full max-w-2xl h-48 sm:h-64 md:h-80 mb-8 md:mb-12 rounded-lg overflow-hidden">
                     <Image
-                        src="/faq/faq-hero.jpg"
+                        src={heroImage}
                         alt="FAQ Hero"
                         fill
                         className="object-cover"
