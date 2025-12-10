@@ -55,9 +55,11 @@ collections:
                         widget: list
                         fields:
                             - {
-                                  label: "Image URL",
+                                  label: "Event Image",
                                   name: "imageUrl",
-                                  widget: "string",
+                                  widget: "image",
+                                  media_folder: "/public/events",
+                                  public_folder: "/events",
                               }
                             - {
                                   label: "Event Type",
