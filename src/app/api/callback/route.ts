@@ -59,18 +59,23 @@ export async function GET(request: NextRequest) {
     <p>Authorization successful. Closing window...</p>
     <script>
         (function() {
-            function recieveMessage(e) {
-                console.log("recieveMessage %o", e);
+            function receiveMessage(e) {
+                console.log("receiveMessage", e);
+                // Send success message with token data
                 window.opener.postMessage(
-                    'authorization:github:success:${JSON.stringify(
-                        tokenData
-                    ).replace(/'/g, "\\'")}',
+                    "authorization:github:success:" + JSON.stringify({
+                        token: "${tokenData.access_token}",
+                        provider: "github"
+                    }),
                     e.origin
                 );
-                window.removeEventListener("message", recieveMessage, false);
+                window.removeEventListener("message", receiveMessage, false);
             }
-            window.addEventListener("message", recieveMessage, false);
-            console.log("Posting message to opener");
+            
+            window.addEventListener("message", receiveMessage, false);
+            
+            // Notify opener that we're ready
+            console.log("Sending authorization message");
             window.opener.postMessage("authorizing:github", "*");
         })();
     </script>
