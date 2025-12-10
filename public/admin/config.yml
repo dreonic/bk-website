@@ -2,7 +2,7 @@ backend:
     name: github
     repo: dreonic/bk-website
     branch: decap-cms
-    base_url: https://bk.juanfrederick.com
+    base_url: http://localhost:3000
     auth_endpoint: api/auth
 
 media_folder: public/img

@@ -26,7 +26,7 @@ export async function GET(request: NextRequest) {
 
     const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(
         redirectUri
-    )}&scope=repo,user`;
+    )}&scope=repo,user,workflow`;
 
     return NextResponse.redirect(githubAuthUrl);
 }
