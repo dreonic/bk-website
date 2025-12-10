@@ -76,3 +76,79 @@ collections:
                                   name: "description",
                                   widget: "text",
                               }
+
+    - name: "committee"
+      label: "Committee"
+      files:
+          - label: "Committee Content"
+            name: "committee"
+            file: "src/app/committee/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Departments"
+                  name: "departments"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Label",
+                            name: "label",
+                            widget: "string",
+                            hint: "Department label (e.g., TOPS, Business, IT)",
+                        }
+                      - {
+                            label: "Title",
+                            name: "title",
+                            widget: "string",
+                            hint: "Display title (e.g., tops, business directors)",
+                        }
+                      - {
+                            label: "Group Photo",
+                            name: "groupPhoto",
+                            widget: "image",
+                            media_folder: "/public/committee",
+                            public_folder: "/committee",
+                        }
+                      - {
+                            label: "Grid Columns Class",
+                            name: "gridCols",
+                            widget: "string",
+                            hint: "Tailwind grid class (e.g., grid-cols-2, grid-cols-3)",
+                        }
+                      - label: "Sections"
+                        name: "sections"
+                        widget: list
+                        hint: "For TOPS, use sections like 'president', 'vice-president (external)'. For others, leave section title empty."
+                        fields:
+                            - {
+                                  label: "Section Title",
+                                  name: "sectionTitle",
+                                  widget: "string",
+                                  required: false,
+                                  hint: "Leave empty for non-TOPS departments",
+                              }
+                            - label: "Members"
+                              name: "members"
+                              widget: list
+                              fields:
+                                  - {
+                                        label: "Name",
+                                        name: "name",
+                                        widget: "string",
+                                    }
+                                  - {
+                                        label: "Image",
+                                        name: "image",
+                                        widget: "image",
+                                        media_folder: "/public/committee",
+                                        public_folder: "/committee",
+                                    }
+                                  - {
+                                        label: "Subtitle",
+                                        name: "subtitle",
+                                        widget: "string",
+                                        required: false,
+                                    }
