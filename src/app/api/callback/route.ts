@@ -48,9 +48,39 @@ export async function GET(request: NextRequest) {
             );
         }
 
-        // Redirect back to admin with token
-        const adminUrl = `/admin/#/auth-complete?provider=github&access_token=${tokenData.access_token}`;
-        return NextResponse.redirect(new URL(adminUrl, request.url));
+        // Return HTML that posts message to parent window (Decap CMS)
+        const html = `
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticating...</title>
+</head>
+<body>
+    <script>
+        (function() {
+            function receiveMessage(e) {
+                console.log("receiveMessage", e);
+                window.opener.postMessage(
+                    'authorization:github:success:${JSON.stringify({
+                        token: tokenData.access_token,
+                        provider: "github",
+                    })}',
+                    e.origin
+                );
+                window.removeEventListener("message", receiveMessage, false);
+            }
+            window.addEventListener("message", receiveMessage, false);
+            console.log("Posting message to opener");
+            window.opener.postMessage("authorizing:github", "*");
+        })();
+    </script>
+</body>
+</html>
+        `;
+
+        return new NextResponse(html, {
+            headers: { "Content-Type": "text/html" },
+        });
     } catch (error) {
         console.error("OAuth callback error:", error);
         return NextResponse.json(
