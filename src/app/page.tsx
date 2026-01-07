@@ -103,21 +103,15 @@ export default function Home() {
                     />
                 </div>
                 <div className="relative flex flex-col items-center md:items-end w-full md:w-2/3 px-6 md:px-[8vw] py-8 md:py-[8vw]">
-                    <div
-                        className="relative w-full text-center md:text-right"
-                        style={{ minHeight: "12vw" }}
-                    >
-                        <p className="md:absolute md:left-16 md:top-4 text-sm md:text-xl font-bold font-[family-name:var(--font-gotham-book)] mb-2 md:mb-0">
-                            We are
-                            <br />
-                            going to...
-                        </p>
-                        <h1 className="md:absolute md:right-0 md:top-0 text-5xl md:text-[10.5rem] font-extralight text-primary-pink font-[family-name:var(--font-marons-regular)]">
-                            Boyolali!
-                        </h1>
-                        <p className="md:absolute md:right-6 md:top-[8rem] text-2xl md:text-[4vw] font-normal text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                            bk 2026
-                        </p>
+                    <div className="w-full flex justify-end">
+                        <Image
+                            src="/textboyolali.svg"
+                            alt="Boyolali"
+                            width={900}
+                            height={220}
+                            priority
+                            className="w-full h-auto"
+                        />
                     </div>
 
                     <p className="text-sm md:text-[1.5vw] mt-8 md:mt-[3rem] text-center md:text-end font-normal">
