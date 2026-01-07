@@ -139,6 +139,20 @@
     }
     body {
         @apply bg-background text-foreground;
+        /* Custom cursor (served from /public). Hotspot controls the click point. */
+        cursor: url("/bk-cursor-64.png") 9 25, auto;
+    }
+
+    /* Keep the same custom cursor on interactive controls (with pointer fallback). */
+    a,
+    button,
+    [role="button"],
+    input,
+    textarea,
+    select,
+    summary {
+        /* Use !important so this wins over Tailwind `cursor-*` utilities (e.g. `cursor-pointer`). */
+        cursor: url("/bk-cursor-64.png") 9 25, pointer !important;
     }
 }
 
