@@ -140,7 +140,7 @@
     body {
         @apply bg-background text-foreground;
         /* Custom cursor (served from /public). Hotspot controls the click point. */
-        cursor: url("/bk-cursor-64.png") 9 25, auto;
+        cursor: url("/bk-cursor-64.png") 8 8, auto;
     }
 
     /* Keep the same custom cursor on interactive controls (with pointer fallback). */
@@ -152,7 +152,7 @@
     select,
     summary {
         /* Use !important so this wins over Tailwind `cursor-*` utilities (e.g. `cursor-pointer`). */
-        cursor: url("/bk-cursor-64.png") 9 25, pointer !important;
+        cursor: url("/bk-cursor-64.png") 8 8, pointer !important;
     }
 }
 
