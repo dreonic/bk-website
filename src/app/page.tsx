@@ -20,8 +20,9 @@ interface Statistic {
 
 export default function Home() {
     const {
-        landingBackgroundImage,
         landingDescription,
+        landingLeftImages,
+        landingRightImages,
         ourProgrammeTitle,
         programmes,
         ourImpactTitle,
@@ -29,8 +30,9 @@ export default function Home() {
         makeADifferenceTitle,
         makeADifferenceDescription,
     } = attributes as {
-        landingBackgroundImage: string;
         landingDescription: string;
+        landingLeftImages: string[];
+        landingRightImages: string[];
         ourProgrammeTitle: string;
         programmes: Programme[];
         ourImpactTitle: string;
@@ -43,7 +45,8 @@ export default function Home() {
         <div>
             <LandingPage
                 description={landingDescription}
-                backgroundImage={landingBackgroundImage}
+                leftImages={[...landingLeftImages, ...landingLeftImages]}
+                rightImages={[...landingRightImages, ...landingRightImages]}
             />
 
             {/* Our Programme */}

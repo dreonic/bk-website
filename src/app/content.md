@@ -1,13 +1,28 @@
 ---
-landingBackgroundImage: /landing-page.png
 landingDescription: >-
     Balik Kampoeng (BK) is a student-led volunteering organisation and the
-    humanitarian arm of the Indonesian Students’ Association at NTU. Established
+    humanitarian arm of the Indonesian Students' Association at NTU. Established
     in 2011, we are dedicated to giving back to local communities in Indonesia
     through service, learning, and cultural exchange.
 
 
-    Balik Kampoeng literally means “returning to the village,” reflecting our mission to work hand in hand with rural communities to create meaningful and sustainable impact, even while we are miles away in Singapore.
+    Balik Kampoeng literally means "returning to the village," reflecting our mission to work hand in hand with rural communities to create meaningful and sustainable impact, even while we are miles away in Singapore.
+landingLeftImages:
+    - /events/2025.png
+    - /events/2024.png
+    - /events/2023.png
+    - /events/2022.png
+    - /events/2019.png
+    - /events/2018.png
+    - /events/2017.png
+landingRightImages:
+    - /events/2016.png
+    - /events/2015.png
+    - /events/2013.png
+    - /events/2011.png
+    - /landing/edu.jpg
+    - /landing/envi.jpg
+    - /landing/umkm.jpg
 ourProgrammeTitle: Our Programme
 programmes:
     - title: Edu
