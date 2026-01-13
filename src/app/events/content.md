@@ -66,7 +66,7 @@ events:
           while raising awareness about marine pollution."
       - imageUrl: /events/2024-beach-clean-up.jpg
         eventType: beloem balik kampoeng
-        eventName: minds
+        eventName: Minds
         description: In collaboration with SG MINDS, this activity engaged participants
           through dancing, games, and arts and crafts. The session aimed to
           create a joyful and inclusive environment while fostering meaningful
@@ -94,7 +94,7 @@ events:
           hands-on workshops, the program highlighted resilience, shared lived
           experiences, and fostered meaningful cross-community learning and
           solidarity."
-        eventName: kbri Singapura pmi Resilience
+        eventName: Kbri Singapura Pmi Resilience
         eventType: balik kampoeng 2022
         imageUrl: /events/2022.png
   - year: 2019
@@ -135,4 +135,30 @@ events:
         eventType: Pintu Peduli
         eventName: " "
         description: " "
+  - year: ""
+    yearEvents:
+      - imageUrl: /events/2018.png
+        eventType: Pintu Peduli 2018
+        eventName: " "
+        description: " "
+      - imageUrl: /events/2017.png
+        eventType: Pintu Peduli 2017
+        description: " "
+        eventName: " "
+      - imageUrl: /events/2016.png
+        eventType: Pintu Peduli 2016
+        description: " "
+        eventName: " "
+      - imageUrl: /events/2015.png
+        eventType: Pintu Peduli 2015
+        description: " "
+        eventName: " "
+      - imageUrl: /events/2013.png
+        eventType: Pintu Peduli 2013
+        description: " "
+        eventName: " "
+      - imageUrl: /events/2011.png
+        eventType: Pintu Peduli 2011
+        description: " "
+        eventName: " "
 ---
