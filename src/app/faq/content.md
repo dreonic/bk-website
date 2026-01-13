@@ -1,6 +1,6 @@
 ---
 headerDescription: Find the answers to your burning questions here!
-heroImage: /faq/faq-hero.jpg
+heroImage: /faq/dsc03425.jpg
 faq:
   - question: Who can volunteer with BK?
     answer: "Anyone from the NTU’s Indonesian community (current students, exchange
