@@ -19,7 +19,7 @@ events:
           and improve education for the younger generation. Why? Because we
           believe that Buleleng, North Bali, has great potential to grow through
           its beautiful nature, rich culture, and strong traditions.'
-      - eventType: "beloem balik kampoeng:"
+      - eventType: beloem balik kampoeng
         eventName: Panti Asuhan Anak Terang
         description: "Beloem Balik Kampoeng: Panti Asuhan Anak Terang is a pre-BK
           activity involving a visit to an orphanage in Batam, where volunteers
@@ -28,7 +28,7 @@ events:
           creating a supportive and encouraging learning environment."
         imageUrl: /events/2025-willing-hearts.jpg
       - imageUrl: /events/2025-willing-hearts.jpg
-        eventType: "beloem balik kampoeng:"
+        eventType: beloem balik kampoeng
         eventName: Willing Hearts
         description: "Beloem Balik Kampoeng: Willing Hearts brought volunteers together
           with seniors at Silver Craft Bukit Batok through colouring,
@@ -36,7 +36,7 @@ events:
           the session fostered meaningful connections while supporting
           creativity, cognitive stimulation, and emotional well-being among the
           elderly."
-      - eventType: "beloem balik kampoeng:"
+      - eventType: beloem balik kampoeng
         eventName: Beach Clean Up
         description: In collaboration with Youth Corps Singapore and PassionWave at
           Sembawang, this beach clean-up initiative gathered volunteers to
@@ -46,33 +46,55 @@ events:
         imageUrl: /events/2025-willing-hearts.jpg
   - year: 2024
     yearEvents:
-      - imageUrl: /events/2024-beach-clean-up.jpg
-        eventType: Beloem Balik Kampoeng
-        eventName: Beach Clean Up
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
       - imageUrl: /events/2024-through-the-jungle.jpg
         eventType: balik kampoeng 2024
         eventName: Through the Jungle
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+        description: "Balik Kampoeng 2024: Through the Jungle focused on the environment
+          and education sectors in Bukit Lawang, Medan, through sustainable,
+          community-based initiatives. Environmental efforts included tree
+          planting, wildlife monitoring using camera traps, and eco-brick
+          creation, while educational programs featured competitions, a science
+          fair, and activities at the Passion Centre. Together, these
+          initiatives aimed to strengthen environmental conservation and inspire
+          children to continue learning."
+      - imageUrl: /events/2024-beach-clean-up.jpg
+        eventType: beloem balik kampoeng
+        eventName: Beach Clean Up
+        description: "Beloem Balik Kampoeng: Beach Clean Up invited volunteers to hunt
+          for “treasures” at sea while cleaning up East Coast Park. Through this
+          hands-on activity, participants contributed to a cleaner coastline
+          while raising awareness about marine pollution."
+      - imageUrl: /events/2024-beach-clean-up.jpg
+        eventType: beloem balik kampoeng
+        eventName: MINDS
+        description: In collaboration with SG MINDS, this activity engaged participants
+          through dancing, games, and arts and crafts. The session aimed to
+          create a joyful and inclusive environment while fostering meaningful
+          connections with the MINDS community.
   - year: 2023
     yearEvents:
       - imageUrl: /events/2023-beyond-the-shore.jpg
         eventType: balik kampoeng 2023
         eventName: Beyond the Shore
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+        description: "Balik Kampoeng 2023: Beyond the Shore delivered environmental and
+          educational initiatives across multiple communities. On the
+          environment front, 15 street lights were installed along 1 km of road
+          in Kampung Melayu and Sungai Buaya, 48 garbage bins were distributed
+          across Pulau Belakang Padang, 250 mangroves were planted at Teritip
+          Beach, and beach clean-ups were conducted at Nongsa Beach. For
+          education, 251 elementary students from SDN 001 and SDN 004 Lubuk Baja
+          were introduced to various professions through Kelas Mimpi, while 50
+          youths were upskilled in financial planning and management through
+          Kelas Master."
+  - year: 2022
+    yearEvents:
+      - description: "Balik Kampoeng 2022: PMI Resilience was held in collaboration with
+          KBRI Singapura to create a space for NTU students to connect and learn
+          from Indonesian Migrant Workers (PMI). Through dialogue sessions and
+          hands-on workshops, the program highlighted resilience, shared lived
+          experiences, and fostered meaningful cross-community learning and
+          solidarity."
+        eventName: KBRI Singapura PMI Resilience
+        eventType: balik kampoeng 2022
+        imageUrl: /events/2022.png
 ---
