@@ -11,7 +11,7 @@ headerDescription: >-
 events:
   - year: 2025
     yearEvents:
-      - imageUrl: /events/2025-surf-the-waves.jpg
+      - imageUrl: /events/2025.png
         eventType: balik kampoeng 2025
         eventName: Surf the Waves
         description: 'Balik Kampoeng 2025: "Surf the Waves" invites everyone to work
@@ -46,7 +46,7 @@ events:
         imageUrl: /events/2025-willing-hearts.jpg
   - year: 2024
     yearEvents:
-      - imageUrl: /events/2024-through-the-jungle.jpg
+      - imageUrl: /events/2024.png
         eventType: balik kampoeng 2024
         eventName: Through the Jungle
         description: "Balik Kampoeng 2024: Through the Jungle focused on the environment
@@ -73,7 +73,7 @@ events:
           connections with the MINDS community.
   - year: 2023
     yearEvents:
-      - imageUrl: /events/2023-beyond-the-shore.jpg
+      - imageUrl: /events/2023.png
         eventType: balik kampoeng 2023
         eventName: Beyond the Shore
         description: "Balik Kampoeng 2023: Beyond the Shore delivered environmental and
