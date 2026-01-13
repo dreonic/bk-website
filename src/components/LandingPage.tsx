@@ -61,7 +61,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             {/* Left scroll strip - desktop only */}
-            <div className="hidden md:block absolute left-0 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
+            <div className="hidden md:block absolute left-12 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
                 <div className="animate-scroll-up flex flex-col gap-4">
                     {duplicatedLeft.map((img, idx) => (
                         <div
@@ -80,7 +80,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             {/* Right scroll strip - desktop only */}
-            <div className="hidden md:block absolute right-0 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
+            <div className="hidden md:block absolute right-12 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
                 <div className="animate-scroll-down flex flex-col gap-4">
                     {duplicatedRight.map((img, idx) => (
                         <div
