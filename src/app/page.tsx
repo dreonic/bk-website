@@ -50,8 +50,8 @@ export default function Home() {
             />
 
             {/* Our Programme */}
-            <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-6 md:gap-8 px-4">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
+            <div className="flex flex-col items-center w-full py-12 md:h-[90vh] md:pt-15 gap-6 md:gap-8 px-4">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     {ourProgrammeTitle}
                 </h1>
                 <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 mt-4 md:mt-10 w-full">
@@ -60,16 +60,16 @@ export default function Home() {
                             key={index}
                             className="flex flex-col w-full max-w-[14rem] items-center gap-2"
                         >
-                            <h1 className="text-xl md:text-2xl lg:text-3xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
                                 {programme.title}
                             </h1>
                             <Image
                                 src={programme.image}
                                 alt={programme.title}
-                                width={144}
-                                height={144}
+                                width={320}
+                                height={320}
                             />
-                            <p className="text-xs md:text-sm font-medium text-center">
+                            <p className="text-sm md:text-md font-medium text-center">
                                 {programme.description}
                             </p>
                         </div>
@@ -78,8 +78,8 @@ export default function Home() {
             </div>
 
             {/* Statistics */}
-            <div className="flex flex-col items-center w-full bg-primary-brown py-12 md:py-24">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
+            <div className="flex flex-col items-center w-full bg-primary-brown py-12 md:py-24 md:h-[90vh]">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
                     {ourImpactTitle}
                 </h1>
                 <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center gap-8 md:gap-16">
@@ -95,7 +95,7 @@ export default function Home() {
             </div>
 
             {/* Boyolali */}
-            <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-144 bg-secondary-beige">
+            <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-[90vh] bg-secondary-beige">
                 <div className="relative w-full md:w-1/3 h-64 md:h-full">
                     <Image
                         src="/landing/boyolali2.jpg"
@@ -148,7 +148,7 @@ export default function Home() {
                             </span>
                         ))}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 md:gap-8 w-full sm:w-auto">
+                <div className="flex flex-col items-center md:flex-row gap-4 md:gap-8 w-full sm:w-auto">
                     <Link href="/donate">
                         <Button
                             variant="outline"
@@ -160,7 +160,7 @@ export default function Home() {
                     <Link href="/partnerships">
                         <Button
                             variant="outline"
-                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full sm:mt-6 md:mt-8 hover:shadow-lg"
+                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full md:mt-8 hover:shadow-lg"
                         >
                             PARTNERSHIPS
                         </Button>
