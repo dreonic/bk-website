@@ -9,6 +9,12 @@ landingDescription: >-
   Balik Kampoeng literally means "returning to the village," reflecting our mission to work hand in hand with rural communities to create meaningful and sustainable impact, even while we are miles away in Singapore.
 landingLeftImages:
   - /20240621_132729.jpg
+  - /dsc05354.jpg
+  - /dsc_1296.jpg
+  - /dsc05595.jpg
+  - /dsc05877.jpg
+  - /dscf1141.jpg
+  - /dscf1174.jpg
 landingRightImages:
   - /events/2016.png
   - /events/2015.png
