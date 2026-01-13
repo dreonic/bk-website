@@ -24,6 +24,7 @@ export default function Home() {
         landingDescription,
         ourProgrammeTitle,
         programmes,
+        ourImpactTitle,
         statistics,
         makeADifferenceTitle,
         makeADifferenceDescription,
@@ -32,6 +33,7 @@ export default function Home() {
         landingDescription: string;
         ourProgrammeTitle: string;
         programmes: Programme[];
+        ourImpactTitle: string;
         statistics: Statistic[];
         makeADifferenceTitle: string;
         makeADifferenceDescription: string;
@@ -73,15 +75,20 @@ export default function Home() {
             </div>
 
             {/* Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center bg-primary-brown py-12 md:py-24 gap-8 md:gap-16">
-                {statistics.map((stat, index) => (
-                    <StatisticsItem
-                        key={index}
-                        number={stat.number}
-                        label={stat.label}
-                        showPlus={stat.showPlus}
-                    />
-                ))}
+            <div className="flex flex-col items-center w-full bg-primary-brown py-12 md:py-24">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
+                    {ourImpactTitle}
+                </h1>
+                <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center gap-8 md:gap-16">
+                    {statistics.map((stat, index) => (
+                        <StatisticsItem
+                            key={index}
+                            number={stat.number}
+                            label={stat.label}
+                            showPlus={stat.showPlus}
+                        />
+                    ))}
+                </div>
             </div>
 
             {/* Boyolali */}

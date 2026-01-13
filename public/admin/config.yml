@@ -70,6 +70,12 @@ collections:
                             default: false,
                         }
                 - {
+                      label: "Our Impact Title",
+                      name: "ourImpactTitle",
+                      widget: "string",
+                      hint: "Title displayed above the statistics section",
+                  }
+                - {
                       label: "Make a Difference Title",
                       name: "makeADifferenceTitle",
                       widget: "string",
