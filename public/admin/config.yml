@@ -93,6 +93,14 @@ collections:
                       hint: "Title displayed above the statistics section",
                   }
                 - {
+                      label: "Boyolali Image",
+                      name: "boyolaliImage",
+                      widget: "image",
+                      media_folder: "/public/landing",
+                      public_folder: "/landing",
+                      hint: "Image for the Boyolali impact section",
+                  }
+                - {
                       label: "Make a Difference Title",
                       name: "makeADifferenceTitle",
                       widget: "string",

@@ -27,6 +27,7 @@ export default function Home() {
         programmes,
         ourImpactTitle,
         statistics,
+        boyolaliImage,
         makeADifferenceTitle,
         makeADifferenceDescription,
     } = attributes as {
@@ -37,6 +38,7 @@ export default function Home() {
         programmes: Programme[];
         ourImpactTitle: string;
         statistics: Statistic[];
+        boyolaliImage: string;
         makeADifferenceTitle: string;
         makeADifferenceDescription: string;
     };
@@ -78,8 +80,8 @@ export default function Home() {
             </div>
 
             {/* Statistics */}
-            <div className="flex flex-col items-center w-full bg-primary-brown py-12 md:py-24 md:h-[90vh]">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
+            <div className="flex flex-col items-center justify-center w-full bg-primary-brown py-12 md:py-20 md:h-[90vh]">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
                     {ourImpactTitle}
                 </h1>
                 <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center gap-8 md:gap-16">
@@ -98,7 +100,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-[90vh] bg-secondary-beige">
                 <div className="relative w-full md:w-1/3 h-64 md:h-full">
                     <Image
-                        src="/landing/boyolali2.jpg"
+                        src={boyolaliImage}
                         alt="Impact Boyolali"
                         fill
                         className="object-cover"
@@ -128,11 +130,11 @@ export default function Home() {
             </div>
 
             {/* Make a difference */}
-            <div className="flex flex-col items-center w-full h-full py-12 md:my-20 px-6 md:px-32">
-                <h1 className="text-3xl md:text-[4rem] font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
+            <div className="flex flex-col items-center w-full h-128 py-12 md:py-20 justify-center px-6 md:px-32">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
                     {makeADifferenceTitle}
                 </h1>
-                <p className="text-base md:text-xl text-center font-light text-primary-brown mt-4 md:mt-6">
+                <p className="text-sm md:text-[1.5vw] text-center font-light text-primary-brown mt-4 md:mt-6">
                     {makeADifferenceDescription
                         .split(". ")
                         .map((sentence, idx, arr) => (
@@ -152,7 +154,7 @@ export default function Home() {
                     <Link href="/donate">
                         <Button
                             variant="outline"
-                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
+                            className="text-base md:text-2xl p-4 md:p-6 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
                         >
                             DONATE
                         </Button>
@@ -160,7 +162,7 @@ export default function Home() {
                     <Link href="/partnerships">
                         <Button
                             variant="outline"
-                            className="text-base md:text-xl p-4 md:p-5 font-bold rounded-full md:mt-8 hover:shadow-lg"
+                            className="text-base md:text-2xl p-4 md:p-6 font-bold rounded-full md:mt-8 hover:shadow-lg"
                         >
                             PARTNERSHIPS
                         </Button>
