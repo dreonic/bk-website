@@ -10,7 +10,6 @@ headerDescription: >-
     These moments remind us of the impact we can create when we work with heart, purpose, and unity. Take a look at some of our past projects and the stories behind them!
 events:
     - year: "2025"
-      alternateImages: true
       yearEvents:
           - imageUrl: /events/2025.png
             eventType: "balik kampoeng 2025:"

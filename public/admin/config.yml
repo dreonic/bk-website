@@ -132,6 +132,13 @@ collections:
                             widget: "number",
                             value_type: "int",
                         }
+                      - {
+                            label: "Alternate Images",
+                            name: "alternateImages",
+                            widget: "boolean",
+                            default: false,
+                            hint: "Enable to display events in a staggered timeline layout (left and right alternating)",
+                        }
                       - label: "Year Events"
                         name: "yearEvents"
                         widget: list
