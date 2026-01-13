@@ -1,70 +1,67 @@
 ---
 landingDescription: >-
-    Balik Kampoeng (BK) is a student-led volunteering organisation and the
-    humanitarian arm of the Indonesian Students' Association at NTU. Established
-    in 2011, we are dedicated to giving back to local communities in Indonesia
-    through service, learning, and cultural exchange.
+  Balik Kampoeng (BK) is a student-led volunteering organisation and the
+  humanitarian arm of the Indonesian Students' Association at NTU. Established
+  in 2011, we are dedicated to giving back to local communities in Indonesia
+  through service, learning, and cultural exchange.
 
 
-    Balik Kampoeng literally means "returning to the village," reflecting our mission to work hand in hand with rural communities to create meaningful and sustainable impact, even while we are miles away in Singapore.
+  Balik Kampoeng literally means "returning to the village," reflecting our mission to work hand in hand with rural communities to create meaningful and sustainable impact, even while we are miles away in Singapore.
 landingLeftImages:
-    - /events/2025.png
-    - /events/2024.png
-    - /events/2023.png
-    - /events/2022.png
-    - /events/2019.png
-    - /events/2018.png
-    - /events/2017.png
+  - /20240621_132729.jpg
+  - /dsc05354.jpg
+  - /dsc_1296.jpg
+  - /dsc05595.jpg
+  - /dsc05877.jpg
+  - /dscf1141.jpg
+  - /dscf1174.jpg
 landingRightImages:
-    - /events/2016.png
-    - /events/2015.png
-    - /events/2013.png
-    - /events/2011.png
-    - /landing/edu.jpg
-    - /landing/envi.jpg
-    - /landing/umkm.jpg
+  - /right-1.jpg
+  - /right-2.jpg
+  - /right-3.jpg
+  - /right-4.jpg
+  - /right-5.jpg
+  - /right-6.jpg
+  - /right-7.jpg
 ourProgrammeTitle: Our Programme
 programmes:
-    - title: Edu
-      image: /landing/edu.jpg
-      description:
-          We run interactive workshops that spark curiosity and introduce new
-          skills through engaging activities. Our goal is to empower communities
-          through meaningful and inclusive learning experiences.
-    - title: Envi
-      image: /landing/envi.jpg
-      description:
-          We carry out environment-focused initiatives that raise awareness
-          and encourage sustainable practices. These projects aim to create lasting
-          positive impacts for both nature and local communities.
-    - title: UMKM
-      image: /landing/umkm.jpg
-      description:
-          We collaborate with local entrepreneurs to enhance product value
-          and expand market reach. Through digital and e-commerce support, we help
-          communities grow sustainably.
-ourImpactTitle: Our Impact
+  - title: Edu
+    image: /landing/edu.jpg
+    description: We run interactive workshops that spark curiosity and introduce new
+      skills through engaging activities. Our goal is to empower communities
+      through meaningful and inclusive learning experiences.
+  - title: Envi
+    image: /landing/envi.jpg
+    description: We carry out environment-focused initiatives that raise awareness
+      and encourage sustainable practices. These projects aim to create lasting
+      positive impacts for both nature and local communities.
+  - title: UMKM
+    image: /landing/umkm.jpg
+    description: We collaborate with local entrepreneurs to enhance product value
+      and expand market reach. Through digital and e-commerce support, we help
+      communities grow sustainably.
 statistics:
-    - number: 10
-      label: Cities
-      showPlus: false
-    - number: 14
-      label: NGO Partners
-      showPlus: false
-    - number: 300
-      label: Dedicated Volunteers
-      showPlus: true
-    - number: 800
-      label: Lives Impacted
-      showPlus: true
-    - number: 20
-      label: Environmental Projects
-      showPlus: false
-    - number: 13
-      label: Villages Visited
-      showPlus: false
+  - number: 10
+    label: Cities
+    showPlus: false
+  - number: 14
+    label: NGO Partners
+    showPlus: false
+  - number: 300
+    label: Dedicated Volunteers
+    showPlus: true
+  - number: 800
+    label: Lives Impacted
+    showPlus: true
+  - number: 20
+    label: Environmental Projects
+    showPlus: false
+  - number: 13
+    label: Villages Visited
+    showPlus: false
+ourImpactTitle: Our Impact
 makeADifferenceTitle: Make a difference
 makeADifferenceDescription: Your support enables us to empower communities,
-    enhance education, and promote sustainability. Partner with us or contribute
-    today to create lasting impact where it's needed most.
+  enhance education, and promote sustainability. Partner with us or contribute
+  today to create lasting impact where it's needed most.
 ---
