@@ -25,17 +25,17 @@ landingRightImages:
   - /right-7.jpg
 ourProgrammeTitle: Our Programme
 programmes:
-  - title: Edu
+  - title: edu
     image: /landing/edu.jpg
     description: We run interactive workshops that spark curiosity and introduce new
       skills through engaging activities. Our goal is to empower communities
       through meaningful and inclusive learning experiences.
-  - title: Envi
+  - title: envi
     image: /landing/envi.jpg
     description: We carry out environment-focused initiatives that raise awareness
       and encourage sustainable practices. These projects aim to create lasting
       positive impacts for both nature and local communities.
-  - title: UMKM
+  - title: umkm
     image: /landing/umkm.jpg
     description: We collaborate with local entrepreneurs to enhance product value
       and expand market reach. Through digital and e-commerce support, we help
