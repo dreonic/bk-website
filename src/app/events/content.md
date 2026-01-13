@@ -97,4 +97,42 @@ events:
         eventName: KBRI Singapura PMI Resilience
         eventType: balik kampoeng 2022
         imageUrl: /events/2022.png
+  - year: 2019
+    yearEvents:
+      - imageUrl: /events/2019.png
+        eventType: balik kampoeng 2019
+        eventName: Kole Beo!
+        description: "Balik Kampoeng: Kole Beo is part of Balik Kampoeng’s annual
+          community initiative held in Mbuit Village, West Nusa Tenggara. This
+          initiative aims to foster awareness and a sense of responsibility to
+          give back to our nation. The core programs of Kole Beo include three
+          key areas: education, health, and technology."
+  - year: 2018
+    yearEvents:
+      - eventType: Pintu Peduli
+        imageUrl: /events/2018.png
+  - year: 2017
+    yearEvents:
+      - imageUrl: /events/2017.png
+        eventType: Pintu Peduli
+  - year: 2016
+    yearEvents:
+      - imageUrl: /events/2016.png
+        eventType: Pintu Peduli
+  - year: 2015
+    yearEvents:
+      - imageUrl: /events/2015.png
+        eventType: Pintu Peduli
+  - year: 2013
+    yearEvents:
+      - imageUrl: /events/2013.png
+        eventType: Pintu Peduli
+        description: " "
+        eventName: " "
+  - year: 2011
+    yearEvents:
+      - imageUrl: /events/2011.png
+        eventType: Pintu Peduli
+        eventName: " "
+        description: " "
 ---
