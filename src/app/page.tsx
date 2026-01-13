@@ -84,14 +84,6 @@ export default function Home() {
                 ))}
             </div>
 
-            {/* Impact */}
-
-            <div className="flex flex-col items-center w-full py-12 md:h-144 md:pt-15 gap-8">
-                <h1 className="text-3xl md:text-[4rem] font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                    Impact
-                </h1>
-            </div>
-
             {/* Boyolali */}
             <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-144 bg-secondary-beige">
                 <div className="relative w-full md:w-1/3 h-64 md:h-full">
