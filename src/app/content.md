@@ -16,13 +16,13 @@ landingLeftImages:
   - /dscf1141.jpg
   - /dscf1174.jpg
 landingRightImages:
-  - /events/2016.png
-  - /events/2015.png
-  - /events/2013.png
-  - /events/2011.png
-  - /landing/edu.jpg
-  - /landing/envi.jpg
-  - /landing/umkm.jpg
+  - /right-1.jpg
+  - /right-2.jpg
+  - /right-3.jpg
+  - /right-4.jpg
+  - /right-5.jpg
+  - /right-6.jpg
+  - /right-7.jpg
 ourProgrammeTitle: Our Programme
 programmes:
   - title: Edu
