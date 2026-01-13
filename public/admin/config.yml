@@ -337,3 +337,41 @@ collections:
                       name: "otherMethodsDescription",
                       widget: "text",
                   }
+
+    - name: "partnerships"
+      label: "Partnerships"
+      files:
+          - label: "Partnerships Content"
+            name: "partnerships"
+            file: "src/app/partnerships/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Partner Sections"
+                  name: "partnerSections"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Section Title",
+                            name: "title",
+                            widget: "string",
+                        }
+                      - label: "Logos"
+                        name: "logos"
+                        widget: "list"
+                        field:
+                            {
+                                label: "Logo Image",
+                                name: "logo",
+                                widget: "image",
+                                media_folder: "/public/partnership",
+                                public_folder: "/partnership",
+                            }
+                - {
+                      label: "Media Partnership Description",
+                      name: "mediaPartnershipDescription",
+                      widget: "text",
+                  }
