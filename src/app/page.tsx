@@ -97,7 +97,7 @@ export default function Home() {
             </div>
 
             {/* Boyolali */}
-            <div className="flex flex-col md:flex-row items-center w-full min-h-[80vh] md:h-[90vh] bg-secondary-beige">
+            <div className="flex flex-col md:flex-row items-center w-full h-[70vh] md:h-[90vh] justify-center bg-secondary-beige">
                 <div className="relative w-full md:w-1/3 h-64 md:h-full">
                     <Image
                         src={boyolaliImage}
@@ -106,7 +106,7 @@ export default function Home() {
                         className="object-cover"
                     />
                 </div>
-                <div className="relative flex flex-col items-center md:items-end w-full md:w-2/3 px-6 md:px-[8vw] py-8 md:py-[8vw]">
+                <div className="relative flex flex-col items-center md:items-end w-full md:w-2/3 px-6 md:px-16 py-8 md:py-12">
                     <div className="w-full flex justify-end">
                         <Image
                             src="/textboyolali.svg"
