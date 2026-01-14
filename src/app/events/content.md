@@ -22,12 +22,11 @@ events:
       - imageUrl: /events/willing-hearts.jpg
         eventType: "beloem balik kampoeng:"
         eventName: Willing Hearts
-        description: "Beloem Balik Kampoeng: Willing Hearts brought volunteers together
-          with seniors at Silver Craft Bukit Batok through colouring,
-          terrarium-making, and silver crafting activities. Beyond creating art,
-          the session fostered meaningful connections while supporting
-          creativity, cognitive stimulation, and emotional well-being among the
-          elderly."
+        description: Volunteers supported Willing Hearts by assisting in meal
+          preparation and food packing for beneficiaries in need. Through
+          hands-on involvement in the kitchen, the initiative contributed to
+          addressing food insecurity while fostering a strong spirit of empathy,
+          teamwork, and service among volunteers.
       - eventType: beloem balik kampoeng
         eventName: Panti Asuhan Anak Terang
         description: "Beloem Balik Kampoeng: Panti Asuhan Anak Terang is a pre-BK
@@ -37,12 +36,18 @@ events:
           creating a supportive and encouraging learning environment."
         imageUrl: /events/panti-asuhan-anak-terang.jpg
       - eventType: beloem balik kampoeng
-        eventName: Beach Clean Up
-        description: In collaboration with Youth Corps Singapore and PassionWave at
-          Sembawang, this beach clean-up initiative gathered volunteers to
-          remove waste and debris along the shoreline. Through collective
-          action, the event raised awareness of plastic pollution and reinforced
-          the importance of protecting our marine environment.
+        eventName: Beach Clean Up & Silver Craft
+        description: On the same day under Youth Corps Singapore, volunteers were
+          simultaneously engaged in two different but equally meaningful
+          initiatives. While one group connected with seniors at Ren Ci, Bukit
+          Batok through colouring, terrarium-making, and silver crafting
+          activities, fostering meaningful relationships and supporting
+          creativity, cognitive stimulation, and emotional well-being. Another
+          group took part in the Beloem Balik Kampoeng beach clean-up at
+          Sembawang, removing waste and debris along the shoreline. Together,
+          these parallel activities reflected a shared commitment to community
+          care and environmental sustainability through diverse forms of
+          service.
         imageUrl: /events/2025-beach-clean-up.jpg
   - year: "2024"
     yearEvents:
