@@ -26,8 +26,8 @@ events:
           conduct mini workshops on English and financial literacy. The
           initiative aims to equip children with essential life skills while
           creating a supportive and encouraging learning environment."
-        imageUrl: /events/2025-willing-hearts.jpg
-      - imageUrl: /events/2025-willing-hearts.jpg
+        imageUrl: /events/panti-asuhan-anak-terang.jpg
+      - imageUrl: /events/willing-hearts.heic
         eventType: "beloem balik kampoeng:"
         eventName: Willing Hearts
         description: "Beloem Balik Kampoeng: Willing Hearts brought volunteers together
@@ -115,12 +115,17 @@ events:
         eventName: Jatimulyo, Yogyakarta
       - imageUrl: /events/2017.png
         eventType: Pintu Peduli 2017
+        eventName: Wae Rii, East Nusa Tenggara
       - imageUrl: /events/2016.png
         eventType: Pintu Peduli 2016
+        eventName: Sei Beduk, Riau Islands
       - imageUrl: /events/2015.png
         eventType: Pintu Peduli 2015
+        eventName: Catuharjo, Yogyakarta
       - imageUrl: /events/2013.png
         eventType: Pintu Peduli 2013
+        eventName: Bojongsoang, Banten
       - imageUrl: /events/2011.png
         eventType: Pintu Peduli 2011
+        eventName: Sukarasa, Banten
 ---
