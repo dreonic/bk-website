@@ -178,6 +178,7 @@ collections:
                             name: "alternateImages",
                             widget: "boolean",
                             default: false,
+                            required: false,
                             hint: "Enable to display events in a staggered timeline layout (left and right alternating)",
                         }
                       - label: "Year Events"
@@ -200,11 +201,13 @@ collections:
                                   label: "Event Name",
                                   name: "eventName",
                                   widget: "string",
+                                  required: false,
                               }
                             - {
                                   label: "Description",
                                   name: "description",
                                   widget: "text",
+                                  required: false,
                               }
 
     - name: "committee"
