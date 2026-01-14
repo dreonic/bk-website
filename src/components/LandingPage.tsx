@@ -115,22 +115,6 @@ const LandingPage: React.FC<LandingPageProps> = ({
                 </div>
 
                 <div className="flex flex-col items-center text-center z-10">
-                    {/* <div className="flex items-end -mb-2 md:-mb-4 lg:-mb-6">
-                        <div className="flex flex-col text-left -mr-2 md:-mr-5 mb-1 md:mb-6 -space-y-1 md:-space-y-2">
-                            <span className="text-md md:text-xl lg:text-3xl font-bold text-primary-brown tracking-wider font-[family-name:var(--font-gotham-medium)]">
-                                WHAT
-                            </span>
-                            <span className="text-md md:text-xl lg:text-3xl font-bold text-primary-brown tracking-wider font-[family-name:var(--font-gotham-medium)]">
-                                IS
-                            </span>
-                        </div>
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                            Balik
-                        </h1>
-                    </div>
-                    <h1 className="text-6xl md:text-7xl lg:text-[8rem] font-extralight text-primary-brown mb-4 md:mb-6 font-[family-name:var(--font-marons-regular)]">
-                        Kampoeng?
-                    </h1> */}
                     <div className="w-72 md:w-144 flex justify-end mb-4 md:mb-6">
                         <Image
                             src="/whatsbk.svg"

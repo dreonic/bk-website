@@ -23,6 +23,8 @@ export default function Home() {
         landingDescription,
         landingLeftImages,
         landingRightImages,
+        whyWeExistTitle,
+        whyWeExistDescription,
         ourProgrammeTitle,
         programmes,
         ourImpactTitle,
@@ -34,6 +36,8 @@ export default function Home() {
         landingDescription: string;
         landingLeftImages: string[];
         landingRightImages: string[];
+        whyWeExistTitle: string;
+        whyWeExistDescription: string;
         ourProgrammeTitle: string;
         programmes: Programme[];
         ourImpactTitle: string;
@@ -51,8 +55,18 @@ export default function Home() {
                 rightImages={[...landingRightImages, ...landingRightImages]}
             />
 
+            {/* Why We Exist */}
+            <div className="flex flex-col items-center w-full py-12 md:py-30 px-4 md:px-32 bg-white">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)] text-center mb-6 md:mb-8">
+                    {whyWeExistTitle}
+                </h1>
+                <p className="text-base md:text-xl text-center text-primary-brown max-w-4xl leading-relaxed font-[family-name:var(--font-gotham-book)]">
+                    {whyWeExistDescription}
+                </p>
+            </div>
+
             {/* Our Programme */}
-            <div className="flex flex-col items-center w-full py-12 md:h-[90vh] md:pt-15 gap-6 md:gap-8 px-4">
+            <div className="flex flex-col items-center w-full py-12 md:h-[90vh] md:pt-15 gap-6 md:gap-8 px-4 bg-secondary-beige">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     {ourProgrammeTitle}
                 </h1>
@@ -118,7 +132,7 @@ export default function Home() {
                         />
                     </div>
 
-                    <p className="text-sm md:text-[1.5vw] mt-8 md:mt-[3rem] text-center md:text-end font-normal">
+                    <p className="text-sm md:text-xl mt-8 md:mt-[3rem] text-center md:text-end font-normal">
                         Balik Kampoeng 2026 will head to Boyolali, a vibrant
                         community known for its rich culture and warm-hearted
                         residents. Volunteers will engage in projects that
@@ -130,11 +144,11 @@ export default function Home() {
             </div>
 
             {/* Make a difference */}
-            <div className="flex flex-col items-center w-full h-128 py-12 md:py-20 justify-center px-6 md:px-32">
+            <div className="flex flex-col items-center w-full py-12 md:py-24 justify-center px-6 md:px-32">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
                     {makeADifferenceTitle}
                 </h1>
-                <p className="text-sm md:text-[1.5vw] text-center font-light text-primary-brown mt-4 md:mt-6">
+                <p className="text-sm md:text-xl text-center font-light text-primary-brown my-6 md:my-8">
                     {makeADifferenceDescription
                         .split(". ")
                         .map((sentence, idx, arr) => (
@@ -154,7 +168,7 @@ export default function Home() {
                     <Link href="/donate">
                         <Button
                             variant="outline"
-                            className="text-base md:text-2xl p-4 md:p-6 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
+                            className="text-base md:text-xl p-4 md:p-6 font-bold rounded-full mt-6 md:mt-8 hover:shadow-lg"
                         >
                             DONATE
                         </Button>
@@ -162,7 +176,7 @@ export default function Home() {
                     <Link href="/partnerships">
                         <Button
                             variant="outline"
-                            className="text-base md:text-2xl p-4 md:p-6 font-bold rounded-full md:mt-8 hover:shadow-lg"
+                            className="text-base md:text-xl p-4 md:p-6 font-bold rounded-full md:mt-8 hover:shadow-lg"
                         >
                             PARTNERSHIPS
                         </Button>

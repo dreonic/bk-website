@@ -48,6 +48,16 @@ collections:
                           public_folder: "/",
                       }
                 - {
+                      label: "Why We Exist Title",
+                      name: "whyWeExistTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Why We Exist Description",
+                      name: "whyWeExistDescription",
+                      widget: "text",
+                  }
+                - {
                       label: "Our Programme Title",
                       name: "ourProgrammeTitle",
                       widget: "string",
