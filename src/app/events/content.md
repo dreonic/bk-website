@@ -64,7 +64,7 @@ events:
           for “treasures” at sea while cleaning up East Coast Park. Through this
           hands-on activity, participants contributed to a cleaner coastline
           while raising awareness about marine pollution."
-      - imageUrl: /events/2024-beach-clean-up.jpg
+      - imageUrl: /events/minds.jpg
         eventType: "beloem balik kampoeng:"
         eventName: Minds
         description: In collaboration with SG MINDS, this activity engaged participants
