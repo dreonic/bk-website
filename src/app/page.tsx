@@ -70,13 +70,13 @@ export default function Home() {
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
                     {ourProgrammeTitle}
                 </h1>
-                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 mt-4 md:mt-10 w-full">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 w-full">
                     {programmes.map((programme, index) => (
                         <div
                             key={index}
-                            className="flex flex-col w-full max-w-[14rem] items-center gap-2"
+                            className="flex flex-col w-full max-w-[14rem] items-center gap-4"
                         >
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-primary-brown font-[family-name:var(--font-marons-regular)]">
+                            <h1 className="flex text-5xl/8 lg:text-6xl/10 font-medium text-primary-brown text-center md:h-24 items-end md:items-center font-[family-name:var(--font-marons-regular)]">
                                 {programme.title}
                             </h1>
                             <Image
@@ -85,7 +85,7 @@ export default function Home() {
                                 width={320}
                                 height={320}
                             />
-                            <p className="text-sm md:text-md font-medium text-center">
+                            <p className="text-sm md:text-md font-[family-name:var(--font-gotham-book)] text-center text-primary-brown">
                                 {programme.description}
                             </p>
                         </div>
@@ -111,8 +111,8 @@ export default function Home() {
             </div>
 
             {/* Boyolali */}
-            <div className="flex flex-col md:flex-row items-center w-full h-[70vh] md:h-[90vh] justify-center bg-secondary-beige">
-                <div className="relative w-full md:w-1/3 h-64 md:h-full">
+            <div className="flex flex-col md:flex-row items-center w-full h-144 justify-center bg-secondary-beige">
+                <div className="relative w-full md:w-1/3 h-72 md:h-full">
                     <Image
                         src={boyolaliImage}
                         alt="Impact Boyolali"
