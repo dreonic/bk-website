@@ -19,14 +19,6 @@ events:
           and improve education for the younger generation. Why? Because we
           believe that Buleleng, North Bali, has great potential to grow through
           its beautiful nature, rich culture, and strong traditions.'
-      - eventType: beloem balik kampoeng
-        eventName: Panti Asuhan Anak Terang
-        description: "Beloem Balik Kampoeng: Panti Asuhan Anak Terang is a pre-BK
-          activity involving a visit to an orphanage in Batam, where volunteers
-          conduct mini workshops on English and financial literacy. The
-          initiative aims to equip children with essential life skills while
-          creating a supportive and encouraging learning environment."
-        imageUrl: /events/panti-asuhan-anak-terang.jpg
       - imageUrl: /events/willing-hearts.jpg
         eventType: "beloem balik kampoeng:"
         eventName: Willing Hearts
@@ -36,6 +28,14 @@ events:
           the session fostered meaningful connections while supporting
           creativity, cognitive stimulation, and emotional well-being among the
           elderly."
+      - eventType: beloem balik kampoeng
+        eventName: Panti Asuhan Anak Terang
+        description: "Beloem Balik Kampoeng: Panti Asuhan Anak Terang is a pre-BK
+          activity involving a visit to an orphanage in Batam, where volunteers
+          conduct mini workshops on English and financial literacy. The
+          initiative aims to equip children with essential life skills while
+          creating a supportive and encouraging learning environment."
+        imageUrl: /events/panti-asuhan-anak-terang.jpg
       - eventType: beloem balik kampoeng
         eventName: Beach Clean Up
         description: In collaboration with Youth Corps Singapore and PassionWave at
