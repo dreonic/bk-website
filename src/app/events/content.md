@@ -39,15 +39,14 @@ events:
         eventName: Beach Clean Up & Silver Craft
         description: On the same day under Youth Corps Singapore, volunteers were
           simultaneously engaged in two different but equally meaningful
-          initiatives. While one group connected with seniors at Ren Ci, Bukit
-          Batok through colouring, terrarium-making, and silver crafting
-          activities, fostering meaningful relationships and supporting
-          creativity, cognitive stimulation, and emotional well-being. Another
-          group took part in the Beloem Balik Kampoeng beach clean-up at
-          Sembawang, removing waste and debris along the shoreline. Together,
-          these parallel activities reflected a shared commitment to community
-          care and environmental sustainability through diverse forms of
-          service.
+          initiatives. One group connected with seniors at Ren Ci, Bukit Batok
+          through colouring, terrarium-making, and silver crafting activities,
+          fostering meaningful relationships and supporting creativity,
+          cognitive stimulation, and emotional well-being. Another group took
+          part in the Beloem Balik Kampoeng beach clean-up at Sembawang,
+          removing waste and debris along the shoreline. Together, these
+          parallel activities reflected a shared commitment to community care
+          and environmental sustainability through diverse forms of service.
         imageUrl: /events/2025-beach-clean-up.jpg
   - year: "2024"
     yearEvents:
