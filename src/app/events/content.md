@@ -27,7 +27,7 @@ events:
           initiative aims to equip children with essential life skills while
           creating a supportive and encouraging learning environment."
         imageUrl: /events/panti-asuhan-anak-terang.jpg
-      - imageUrl: /events/willing-hearts.heic
+      - imageUrl: /events/panti-asuhan-anak-terang.jpg
         eventType: "beloem balik kampoeng:"
         eventName: Willing Hearts
         description: "Beloem Balik Kampoeng: Willing Hearts brought volunteers together
