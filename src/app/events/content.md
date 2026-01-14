@@ -43,7 +43,7 @@ events:
           remove waste and debris along the shoreline. Through collective
           action, the event raised awareness of plastic pollution and reinforced
           the importance of protecting our marine environment.
-        imageUrl: /events/2025-willing-hearts.jpg
+        imageUrl: /events/placeholder.jpg
   - year: "2024"
     yearEvents:
       - imageUrl: /events/2024.png
@@ -57,7 +57,7 @@ events:
           fair, and activities at the Passion Centre. Together, these
           initiatives aimed to strengthen environmental conservation and inspire
           children to continue learning."
-      - imageUrl: /events/2024-beach-clean-up.jpg
+      - imageUrl: /events/placeholder.jpg
         eventType: "beloem balik kampoeng:"
         eventName: Beach Clean Up
         description: "Beloem Balik Kampoeng: Beach Clean Up invited volunteers to hunt
