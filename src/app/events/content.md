@@ -27,7 +27,7 @@ events:
           hands-on involvement in the kitchen, the initiative contributed to
           addressing food insecurity while fostering a strong spirit of empathy,
           teamwork, and service among volunteers.
-      - eventType: beloem balik kampoeng
+      - eventType: "beloem balik kampoeng:"
         eventName: Panti Asuhan Anak Terang
         description: "Beloem Balik Kampoeng: Panti Asuhan Anak Terang is a pre-BK
           activity involving a visit to an orphanage in Batam, where volunteers
@@ -35,7 +35,7 @@ events:
           initiative aims to equip children with essential life skills while
           creating a supportive and encouraging learning environment."
         imageUrl: /events/panti-asuhan-anak-terang.jpg
-      - eventType: beloem balik kampoeng
+      - eventType: "beloem balik kampoeng:"
         eventName: Beach Clean Up & Silver Craft
         description: On the same day under Youth Corps Singapore, volunteers were
           simultaneously engaged in two different but equally meaningful
