@@ -23,7 +23,7 @@ landingRightImages:
   - /right-5.jpg
   - /right-6.jpg
   - /right-7.jpg
-whyWeExistTitle: Why we exist
+whyWeExistTitle: Why We Exist
 whyWeExistDescription: BK exists because we believe that caring for others
   shouldn’t stop just because we’re studying abroad. We want to make a
   difference in underprivileged communities in Indonesia, through empathy,
