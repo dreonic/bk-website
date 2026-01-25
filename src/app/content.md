@@ -23,6 +23,11 @@ landingRightImages:
   - /right-5.jpg
   - /right-6.jpg
   - /right-7.jpg
+whyWeExistTitle: Why do we exist?
+whyWeExistDescription: BK exists because we believe that caring for others
+  shouldn’t stop just because we’re studying abroad. We want to make a
+  difference in underprivileged communities in Indonesia, through empathy,
+  action, and meaningful connections. Every project we do comes from the heart.
 ourProgrammeTitle: Our Programme
 programmes:
   - title: education
@@ -65,9 +70,4 @@ makeADifferenceTitle: Make a difference
 makeADifferenceDescription: Your support enables us to empower communities,
   enhance education, and promote sustainability. Partner with us or contribute
   today to create lasting impact where it's needed most.
-whyWeExistTitle: Why We Exist?
-whyWeExistDescription: BK exists because we believe that caring for others
-  shouldn’t stop just because we’re studying abroad. We want to make a
-  difference in underprivileged communities in Indonesia, through empathy,
-  action, and meaningful connections. Every project we do comes from the heart.
 ---
