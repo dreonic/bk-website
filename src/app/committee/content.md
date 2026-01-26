@@ -57,7 +57,7 @@ departments:
             image: /committee/juan.jpg
             subtitle: ""
           - name: Juannisa Putri Sunarya
-            image: /committee/project.jpg
+            image: /committee/juannisa.jpg
             subtitle: ""
   - label: Project
     title: project directors
