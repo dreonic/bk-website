@@ -32,20 +32,20 @@ departments:
             subtitle: ""
   - label: Business
     title: business directors
-    groupPhoto: /committee/business-group.jpg
+    groupPhoto: /committee/business.jpg
     gridCols: grid-cols-2
     sections:
       - sectionTitle: ""
         members:
           - name: Deandra Devi
-            image: /committee/deandra.jpg
+            image: /committee/dea.jpg
             subtitle: ""
           - name: Lynn Louise
             image: /committee/lynn.jpg
             subtitle: ""
   - label: IT
     title: it directors
-    groupPhoto: /committee/it-group.jpg
+    groupPhoto: /committee/it.jpg
     gridCols: grid-cols-3
     sections:
       - sectionTitle: ""
@@ -57,11 +57,11 @@ departments:
             image: /committee/juan.jpg
             subtitle: ""
           - name: Juannisa Putri Sunarya
-            image: /committee/juannisa.jpg
+            image: /committee/project.jpg
             subtitle: ""
   - label: Project
     title: project directors
-    groupPhoto: /committee/project-group.jpg
+    groupPhoto: /committee/project.jpg
     gridCols: grid-cols-2 sm:grid-cols-2 md:grid-cols-3
     sections:
       - sectionTitle: ""
@@ -73,7 +73,7 @@ departments:
             image: /committee/aurel.jpg
             subtitle: ""
           - name: Evelyn Aurelia Wijaya
-            image: /committee/evelyn.jpg
+            image: /committee/eve.jpg
             subtitle: ""
           - name: Jadelyn Minneke Sutopo
             image: /committee/jade.jpg
@@ -86,7 +86,7 @@ departments:
             subtitle: ""
   - label: Publications
     title: pnp directors
-    groupPhoto: /committee/pnp-group.jpg
+    groupPhoto: /committee/pubs.jpg
     gridCols: grid-cols-2 xl:grid-cols-4
     sections:
       - sectionTitle: ""
@@ -98,7 +98,7 @@ departments:
             image: /committee/kimi.jpg
             subtitle: ""
           - name: Muhammad Rizki
-            image: /committee/rizki.jpg
+            image: /committee/kiki.jpg
             subtitle: ""
           - name: Sharon Tjipto Santoso
             image: /committee/sharon.jpg
