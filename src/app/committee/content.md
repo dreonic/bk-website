@@ -6,7 +6,7 @@ headerDescription: "Behind every Balik Kampoeng project is a passionate team of
 departments:
   - label: TOPS
     title: tops
-    groupPhoto: /committee/pexels-minan1398-853168.jpg
+    groupPhoto: /committee/tops.jpg
     gridCols: grid-cols-2
     sections:
       - sectionTitle: president
