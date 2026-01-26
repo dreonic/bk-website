@@ -33,11 +33,11 @@ export default function CommitteePage() {
     };
 
     const [selectedDepartment, setSelectedDepartment] = useState(
-        departments[0]?.label || "TOPS"
+        departments[0]?.label || "TOPS",
     );
 
     const currentDepartment = departments.find(
-        (d) => d.label === selectedDepartment
+        (d) => d.label === selectedDepartment,
     );
 
     return (
@@ -55,7 +55,7 @@ export default function CommitteePage() {
                 </h2>
 
                 {/* Group Photo */}
-                <div className="relative w-full max-w-3xl h-48 sm:h-56 md:h-72 lg:h-96 bg-gray-200 rounded-xl md:rounded-3xl overflow-hidden mb-12 md:mb-20">
+                <div className="relative max-w-3xl w-80 h-64 sm:w-96 sm:h-72 md:w-144 md:h-108 lg:w-180 lg:h-120 bg-gray-200 rounded-xl md:rounded-3xl overflow-hidden mb-12 md:mb-20">
                     {currentDepartment?.groupPhoto && (
                         <Image
                             src={currentDepartment.groupPhoto}
@@ -115,7 +115,7 @@ export default function CommitteePage() {
                                     subtitle={member.subtitle}
                                     image={member.image}
                                 />
-                            )
+                            ),
                         )}
                     </div>
                 )}
