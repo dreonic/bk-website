@@ -36,10 +36,6 @@ export default function CommitteePage() {
         departments[0]?.label || "TOPS",
     );
 
-    const currentDepartment = departments.find(
-        (d) => d.label === selectedDepartment,
-    );
-
     return (
         <>
             <Header title="Our Committee" description={headerDescription} />
@@ -50,75 +46,92 @@ export default function CommitteePage() {
                     onChange={setSelectedDepartment}
                 />
 
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight text-primary-brown mt-8 md:mt-12 mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
-                    {currentDepartment?.title}
-                </h2>
-
-                {/* Group Photo */}
-                <div className="relative max-w-3xl w-80 h-64 sm:w-96 sm:h-72 md:w-144 md:h-108 lg:w-180 lg:h-120 bg-gray-200 rounded-xl md:rounded-3xl overflow-hidden mb-12 md:mb-20">
-                    {currentDepartment?.groupPhoto && (
-                        <Image
-                            src={currentDepartment.groupPhoto}
-                            alt={`${currentDepartment.title} group photo`}
-                            fill
-                            className="object-cover"
-                        />
-                    )}
-                </div>
-
-                {/* TOPS with sections */}
-                {currentDepartment?.label === "TOPS" && (
-                    <div className="flex flex-col gap-8 w-108 items-center">
-                        {currentDepartment.sections.map((section, idx) => (
-                            <div key={idx} className="w-full">
-                                {section.sectionTitle && (
-                                    <h3 className="text-2xl md:text-3xl font-extralight text-primary-brown mt-4 mb-4 md:mb-6 text-center font-[family-name:var(--font-marons-regular)]">
-                                        {section.sectionTitle}
-                                    </h3>
-                                )}
-                                <div
-                                    className={`flex flex-col ${
-                                        section.members.length > 1
-                                            ? "sm:flex-row"
-                                            : ""
-                                    } gap-8 w-full justify-center ${
-                                        section.members.length > 1
-                                            ? "sm:justify-between"
-                                            : ""
-                                    } items-center`}
-                                >
-                                    {section.members.map((member) => (
-                                        <div key={member.name}>
-                                            <MemberCard
-                                                name={member.name}
-                                                image={member.image}
-                                                subtitle={member.subtitle}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                )}
-
-                {/* Other Departments */}
-                {currentDepartment?.label !== "TOPS" && (
+                {departments.map((department) => (
                     <div
-                        className={`grid grid-cols-2 ${currentDepartment?.gridCols} gap-6 md:gap-16 justify-center`}
+                        key={department.label}
+                        className={`w-full flex flex-col items-center ${
+                            selectedDepartment === department.label
+                                ? ""
+                                : "hidden"
+                        }`}
                     >
-                        {currentDepartment?.sections[0]?.members.map(
-                            (member) => (
-                                <MemberCard
-                                    key={member.name}
-                                    name={member.name}
-                                    subtitle={member.subtitle}
-                                    image={member.image}
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight text-primary-brown mt-8 md:mt-12 mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
+                            {department.title}
+                        </h2>
+
+                        {/* Group Photo */}
+                        <div className="relative max-w-3xl w-80 h-64 sm:w-96 sm:h-72 md:w-144 md:h-108 lg:w-180 lg:h-120 bg-gray-200 rounded-xl md:rounded-3xl overflow-hidden mb-12 md:mb-20">
+                            {department.groupPhoto && (
+                                <Image
+                                    src={department.groupPhoto}
+                                    alt={`${department.title} group photo`}
+                                    fill
+                                    className="object-cover"
+                                    priority={
+                                        department.label ===
+                                        departments[0]?.label
+                                    }
                                 />
-                            ),
+                            )}
+                        </div>
+
+                        {/* TOPS with sections */}
+                        {department.label === "TOPS" && (
+                            <div className="flex flex-col gap-8 w-108 items-center">
+                                {department.sections.map((section, idx) => (
+                                    <div key={idx} className="w-full">
+                                        {section.sectionTitle && (
+                                            <h3 className="text-2xl md:text-3xl font-extralight text-primary-brown mt-4 mb-4 md:mb-6 text-center font-[family-name:var(--font-marons-regular)]">
+                                                {section.sectionTitle}
+                                            </h3>
+                                        )}
+                                        <div
+                                            className={`flex flex-col ${
+                                                section.members.length > 1
+                                                    ? "sm:flex-row"
+                                                    : ""
+                                            } gap-8 w-full justify-center ${
+                                                section.members.length > 1
+                                                    ? "sm:justify-between"
+                                                    : ""
+                                            } items-center`}
+                                        >
+                                            {section.members.map((member) => (
+                                                <div key={member.name}>
+                                                    <MemberCard
+                                                        name={member.name}
+                                                        image={member.image}
+                                                        subtitle={
+                                                            member.subtitle
+                                                        }
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {/* Other Departments */}
+                        {department.label !== "TOPS" && (
+                            <div
+                                className={`grid grid-cols-2 ${department.gridCols} gap-6 md:gap-16 justify-center`}
+                            >
+                                {department.sections[0]?.members.map(
+                                    (member) => (
+                                        <MemberCard
+                                            key={member.name}
+                                            name={member.name}
+                                            subtitle={member.subtitle}
+                                            image={member.image}
+                                        />
+                                    ),
+                                )}
+                            </div>
                         )}
                     </div>
-                )}
+                ))}
             </div>
         </>
     );
