@@ -39,24 +39,23 @@ export default function DonatePage() {
     const [email, setEmail] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
 
+    const lambdaEndpoint = process.env.NEXT_PUBLIC_LAMBDA_ENDPOINT;
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
         try {
-            const response = await fetch(
-                "https://ugaccavdisoogmc3eixgwufq5m0mztfv.lambda-url.ap-southeast-1.on.aws/",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({
-                        name,
-                        email,
-                        type: "donation inquiry",
-                    }),
-                }
-            );
+            const response = await fetch(lambdaEndpoint || "", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    type: "donation inquiry",
+                }),
+            });
 
             if (response.ok) {
                 setIsSubmitted(true);
@@ -95,20 +94,20 @@ export default function DonatePage() {
                             __html: paymentMethodsText
                                 .replace(
                                     /\*\*(.*?)\*\*/g,
-                                    "<strong>$1</strong>"
+                                    "<strong>$1</strong>",
                                 )
                                 .replace(
                                     /<strong>(.*?)<\/strong>/g,
                                     (match, text) => {
                                         if (
                                             text.includes(
-                                                "Bank Transfer/Paynow"
+                                                "Bank Transfer/Paynow",
                                             )
                                         ) {
                                             return `<strong class="font-bold underline">${text}</strong>`;
                                         }
                                         return `<strong class="font-bold">${text}</strong>`;
-                                    }
+                                    },
                                 ),
                         }}
                     />
