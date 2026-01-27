@@ -1,0 +1,390 @@
+backend:
+    name: github
+    repo: dreonic/bk-website
+    branch: decap-cms
+    base_url: https://bk.juanfrederick.com
+    auth_endpoint: api/auth
+    api_root: https://bk.juanfrederick.com/api/github
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+    - name: "home"
+      label: "Home Page"
+      files:
+          - label: "Home Content"
+            name: "home"
+            file: "src/app/content.md"
+            fields:
+                - {
+                      label: "Landing Description",
+                      name: "landingDescription",
+                      widget: "text",
+                      hint: "The description text under 'What is Balik Kampoeng?'",
+                  }
+                - label: "Landing Left Scroll Images"
+                  name: "landingLeftImages"
+                  widget: "list"
+                  hint: "Images for the left infinite scroll strip (7 images recommended)"
+                  field:
+                      {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          media_folder: "/public",
+                          public_folder: "/",
+                      }
+                - label: "Landing Right Scroll Images"
+                  name: "landingRightImages"
+                  widget: "list"
+                  hint: "Images for the right infinite scroll strip (7 images recommended)"
+                  field:
+                      {
+                          label: "Image",
+                          name: "image",
+                          widget: "image",
+                          media_folder: "/public",
+                          public_folder: "/",
+                      }
+                - {
+                      label: "Why We Exist Title",
+                      name: "whyWeExistTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Why We Exist Description",
+                      name: "whyWeExistDescription",
+                      widget: "text",
+                  }
+                - {
+                      label: "Our Programme Title",
+                      name: "ourProgrammeTitle",
+                      widget: "string",
+                  }
+                - label: "Programmes"
+                  name: "programmes"
+                  widget: list
+                  fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - {
+                            label: "Image",
+                            name: "image",
+                            widget: "image",
+                            media_folder: "/public/landing",
+                            public_folder: "/landing",
+                        }
+                      - {
+                            label: "Description",
+                            name: "description",
+                            widget: "text",
+                        }
+                - label: "Statistics"
+                  name: "statistics"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Number",
+                            name: "number",
+                            widget: "number",
+                            value_type: "int",
+                        }
+                      - { label: "Label", name: "label", widget: "string" }
+                      - {
+                            label: "Show Plus Sign",
+                            name: "showPlus",
+                            widget: "boolean",
+                            default: false,
+                        }
+                - {
+                      label: "Our Impact Title",
+                      name: "ourImpactTitle",
+                      widget: "string",
+                      hint: "Title displayed above the statistics section",
+                  }
+                - {
+                      label: "Boyolali Image",
+                      name: "boyolaliImage",
+                      widget: "image",
+                      media_folder: "/public/landing",
+                      public_folder: "/landing",
+                      hint: "Image for the Boyolali impact section",
+                  }
+                - {
+                      label: "Make a Difference Title",
+                      name: "makeADifferenceTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Make a Difference Description",
+                      name: "makeADifferenceDescription",
+                      widget: "text",
+                  }
+
+    - name: "faq"
+      label: "FAQ"
+      files:
+          - label: "FAQ Content"
+            name: "faq"
+            file: "src/app/faq/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - {
+                      label: "Hero Image",
+                      name: "heroImage",
+                      widget: "image",
+                      media_folder: "/public/faq",
+                      public_folder: "/faq",
+                  }
+                - label: "FAQ Items"
+                  name: "faq"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Question",
+                            name: "question",
+                            widget: "string",
+                        }
+                      - { label: "Answer", name: "answer", widget: "text" }
+
+    - name: "events"
+      label: "Events"
+      files:
+          - label: "Events Content"
+            name: "events"
+            file: "src/app/events/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Events by Year"
+                  name: "events"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Year",
+                            name: "year",
+                            widget: "number",
+                            value_type: "int",
+                        }
+                      - {
+                            label: "Alternate Images",
+                            name: "alternateImages",
+                            widget: "boolean",
+                            default: false,
+                            required: false,
+                            hint: "Enable to display events in a staggered timeline layout (left and right alternating)",
+                        }
+                      - label: "Year Events"
+                        name: "yearEvents"
+                        widget: list
+                        fields:
+                            - {
+                                  label: "Event Image",
+                                  name: "imageUrl",
+                                  widget: "image",
+                                  media_folder: "/public/events",
+                                  public_folder: "/events",
+                              }
+                            - {
+                                  label: "Event Type",
+                                  name: "eventType",
+                                  widget: "string",
+                              }
+                            - {
+                                  label: "Event Name",
+                                  name: "eventName",
+                                  widget: "string",
+                                  required: false,
+                              }
+                            - {
+                                  label: "Description",
+                                  name: "description",
+                                  widget: "text",
+                                  required: false,
+                              }
+
+    - name: "committee"
+      label: "Committee"
+      files:
+          - label: "Committee Content"
+            name: "committee"
+            file: "src/app/committee/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Departments"
+                  name: "departments"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Label",
+                            name: "label",
+                            widget: "string",
+                            hint: "Department label (e.g., TOPS, Business, IT)",
+                        }
+                      - {
+                            label: "Title",
+                            name: "title",
+                            widget: "string",
+                            hint: "Display title (e.g., tops, business directors)",
+                        }
+                      - {
+                            label: "Group Photo",
+                            name: "groupPhoto",
+                            widget: "image",
+                            media_folder: "/public/committee",
+                            public_folder: "/committee",
+                        }
+                      - {
+                            label: "Grid Class",
+                            name: "gridClass",
+                            widget: "string",
+                            hint: "Tailwind grid class (e.g., grid-rows-2, grid-cols-3)",
+                        }
+                      - label: "Sections"
+                        name: "sections"
+                        widget: list
+                        hint: "For TOPS, use sections like 'president', 'vice-president (external)'. For others, leave section title empty."
+                        fields:
+                            - {
+                                  label: "Section Title",
+                                  name: "sectionTitle",
+                                  widget: "string",
+                                  required: false,
+                                  hint: "Leave empty for non-TOPS departments",
+                              }
+                            - label: "Members"
+                              name: "members"
+                              widget: list
+                              fields:
+                                  - {
+                                        label: "Name",
+                                        name: "name",
+                                        widget: "string",
+                                    }
+                                  - {
+                                        label: "Image",
+                                        name: "image",
+                                        widget: "image",
+                                        media_folder: "/public/committee",
+                                        public_folder: "/committee",
+                                    }
+                                  - {
+                                        label: "Subtitle",
+                                        name: "subtitle",
+                                        widget: "string",
+                                        required: false,
+                                    }
+
+    - name: "donate"
+      label: "Donate"
+      files:
+          - label: "Donate Content"
+            name: "donate"
+            file: "src/app/donate/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - {
+                      label: "Hero Image",
+                      name: "heroImage",
+                      widget: "image",
+                      media_folder: "/public/donate",
+                      public_folder: "/donate",
+                  }
+                - { label: "Intro Text", name: "introText", widget: "text" }
+                - {
+                      label: "Payment Methods Text",
+                      name: "paymentMethodsText",
+                      widget: "text",
+                      hint: "Use **text** for bold formatting",
+                  }
+                - label: "Donation Methods"
+                  name: "donationMethods"
+                  widget: list
+                  fields:
+                      - { label: "Title", name: "title", widget: "string" }
+                      - {
+                            label: "Bank Name",
+                            name: "bankName",
+                            widget: "string",
+                        }
+                      - {
+                            label: "Account Name",
+                            name: "accountName",
+                            widget: "string",
+                        }
+                      - {
+                            label: "Account Details",
+                            name: "accountDetails",
+                            widget: "text",
+                        }
+                      - {
+                            label: "QR Code Image",
+                            name: "qrCodeSrc",
+                            widget: "image",
+                            required: false,
+                            media_folder: "/public/donate",
+                            public_folder: "/donate",
+                        }
+                - {
+                      label: "Other Methods Title",
+                      name: "otherMethodsTitle",
+                      widget: "string",
+                  }
+                - {
+                      label: "Other Methods Description",
+                      name: "otherMethodsDescription",
+                      widget: "text",
+                  }
+
+    - name: "partnerships"
+      label: "Partnerships"
+      files:
+          - label: "Partnerships Content"
+            name: "partnerships"
+            file: "src/app/partnerships/content.md"
+            fields:
+                - {
+                      label: "Header Description",
+                      name: "headerDescription",
+                      widget: "text",
+                  }
+                - label: "Partner Sections"
+                  name: "partnerSections"
+                  widget: list
+                  fields:
+                      - {
+                            label: "Section Title",
+                            name: "title",
+                            widget: "string",
+                        }
+                      - label: "Logos"
+                        name: "logos"
+                        widget: "list"
+                        field:
+                            {
+                                label: "Logo Image",
+                                name: "logo",
+                                widget: "image",
+                                media_folder: "/public/partnership",
+                                public_folder: "/partnership",
+                            }
+                - {
+                      label: "Media Partnership Description",
+                      name: "mediaPartnershipDescription",
+                      widget: "text",
+                  }

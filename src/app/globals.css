@@ -139,6 +139,20 @@
     }
     body {
         @apply bg-background text-foreground;
+        /* Custom cursor (served from /public). Hotspot controls the click point. */
+        cursor: url("/bk-cursor-64.png") 8 8, auto;
+    }
+
+    /* Keep the same custom cursor on interactive controls (with pointer fallback). */
+    a,
+    button,
+    [role="button"],
+    input,
+    textarea,
+    select,
+    summary {
+        /* Use !important so this wins over Tailwind `cursor-*` utilities (e.g. `cursor-pointer`). */
+        cursor: url("/bk-cursor-64.png") 8 8, pointer !important;
     }
 }
 
@@ -146,4 +160,56 @@
     to {
         stroke-dashoffset: 0;
     }
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-scroll-up {
+    animation: scroll-up 60s linear infinite;
+}
+
+.animate-scroll-down {
+    animation: scroll-down 60s linear infinite;
+}
+
+.animate-scroll-left {
+    animation: scroll-left 10s linear infinite;
+}
+
+.animate-scroll-right {
+    animation: scroll-right 10s linear infinite;
 }

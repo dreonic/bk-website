@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 
-interface AccordionItem {
+export interface AccordionItem {
     question: string;
     answer: string;
 }
