@@ -121,16 +121,16 @@ export default function Home() {
             </div>
 
             {/* Boyolali */}
-            <div className="flex flex-col md:flex-row items-center w-full h-144 justify-center bg-secondary-beige">
-                <div className="relative w-full md:w-1/3 h-72 md:h-full">
+            <div className="flex flex-col lg:flex-row items-center w-full h-144 md:h-200 lg:h-[90vh] justify-center bg-secondary-beige">
+                <div className="relative w-full lg:w-1/3 h-72 md:h-160 lg:h-full">
                     <Image
                         src={boyolaliImage}
                         alt="Impact Boyolali"
                         fill
-                        className="object-cover"
+                        className="object-cover object-bottom md:object-[center_70%] lg:object-[55%_center]"
                     />
                 </div>
-                <div className="relative flex flex-col items-center md:items-end w-full md:w-2/3 px-6 md:px-16 py-8 md:py-12">
+                <div className="relative flex flex-col items-center lg:items-end w-full lg:w-2/3 px-6 md:px-16 py-8 md:py-12">
                     <div className="w-full flex justify-end">
                         <Image
                             src="/textboyolali.svg"
@@ -142,7 +142,7 @@ export default function Home() {
                         />
                     </div>
 
-                    <p className="text-sm md:text-xl mt-8 md:mt-[3rem] text-center md:text-end font-normal">
+                    <p className="text-sm md:text-xl mt-8 md:mt-[3rem] text-center lg:text-end font-normal">
                         Balik Kampoeng 2026 will head to Boyolali, a vibrant
                         community known for its rich culture and warm-hearted
                         residents. Volunteers will engage in projects that
