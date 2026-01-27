@@ -22,7 +22,7 @@ interface Department {
     label: string;
     title: string;
     groupPhoto?: string;
-    gridCols: string;
+    gridClass: string;
     sections: Section[];
 }
 
@@ -77,7 +77,7 @@ export default function CommitteePage() {
 
                         {/* TOPS with sections */}
                         {department.label === "TOPS" && (
-                            <div className="flex flex-col gap-8 w-108 items-center">
+                            <div className="flex flex-col gap-8 w-full max-w-108 items-center">
                                 {department.sections.map((section, idx) => (
                                     <div key={idx} className="w-full">
                                         {section.sectionTitle && (
@@ -116,7 +116,7 @@ export default function CommitteePage() {
                         {/* Other Departments */}
                         {department.label !== "TOPS" && (
                             <div
-                                className={`grid grid-cols-2 ${department.gridCols} gap-6 md:gap-16 justify-center`}
+                                className={`grid ${department.gridClass} gap-6 md:gap-16 justify-center`}
                             >
                                 {department.sections[0]?.members.map(
                                     (member) => (

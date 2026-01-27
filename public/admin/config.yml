@@ -246,10 +246,10 @@ collections:
                             public_folder: "/committee",
                         }
                       - {
-                            label: "Grid Columns Class",
-                            name: "gridCols",
+                            label: "Grid Class",
+                            name: "gridClass",
                             widget: "string",
-                            hint: "Tailwind grid class (e.g., grid-cols-2, grid-cols-3)",
+                            hint: "Tailwind grid class (e.g., grid-rows-2, grid-cols-3)",
                         }
                       - label: "Sections"
                         name: "sections"

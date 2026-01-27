@@ -26,7 +26,7 @@ const EventItem = ({
     event: Event;
     side: "left" | "right";
 }) => (
-    <div className={`relative ${side === "left" ? "pr-6" : "pl-6"}`}>
+    <div className={`relative ${side === "left" ? "md:pr-6" : "md:pl-6"}`}>
         {/* Diamond marker aligned to center line */}
         <div
             className={`absolute w-3 h-3 bg-primary-brown rotate-45 z-10 hidden md:block ${
@@ -96,7 +96,7 @@ export default function EventsPage() {
                                                         event={event}
                                                         side="left"
                                                     />
-                                                )
+                                                ),
                                             )}
                                         </div>
                                         {/* Desktop: two overlapping columns for staggered layout */}
@@ -114,7 +114,7 @@ export default function EventsPage() {
                                                                 side="left"
                                                             />
                                                         </div>
-                                                    )
+                                                    ),
                                                 )}
                                             </div>
 
@@ -131,7 +131,7 @@ export default function EventsPage() {
                                                                 side="right"
                                                             />
                                                         </div>
-                                                    )
+                                                    ),
                                                 )}
                                             </div>
                                         </div>
@@ -200,7 +200,7 @@ export default function EventsPage() {
                                                         />
                                                     </div>
                                                 </div>
-                                            )
+                                            ),
                                         )}
                                     </div>
                                 )}
