@@ -23,7 +23,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             <div className="absolute inset-0 -z-30 bg-[#EFEAD6]" />
 
             {/* Top scroll strip - mobile only */}
-            <div className="md:hidden absolute top-24 left-0 right-0 h-32 overflow-hidden opacity-60">
+            <div className="lg:hidden absolute top-24 md:top-30 left-0 right-0 h-32 md:h-40 overflow-hidden opacity-60">
                 <div className="animate-scroll-left flex flex-row gap-4 h-full">
                     {duplicatedLeft.map((img, idx) => (
                         <div
@@ -42,7 +42,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             {/* Bottom scroll strip - mobile only */}
-            <div className="md:hidden absolute bottom-24 left-0 right-0 h-32 overflow-hidden opacity-60">
+            <div className="lg:hidden absolute bottom-24 md:bottom-30 left-0 right-0 h-32 md:h-40 overflow-hidden opacity-60">
                 <div className="animate-scroll-right flex flex-row gap-4 h-full">
                     {duplicatedRight.map((img, idx) => (
                         <div
@@ -61,7 +61,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             {/* Left scroll strip - desktop only */}
-            <div className="hidden md:block absolute left-12 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
+            <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-24 lg:w-64 overflow-hidden opacity-60">
                 <div className="animate-scroll-up flex flex-col gap-4">
                     {duplicatedLeft.map((img, idx) => (
                         <div
@@ -80,7 +80,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             </div>
 
             {/* Right scroll strip - desktop only */}
-            <div className="hidden md:block absolute right-12 top-0 bottom-0 w-24 md:w-48 lg:w-64 overflow-hidden opacity-60">
+            <div className="hidden lg:block absolute right-12 top-0 bottom-0 w-24 lg:w-64 overflow-hidden opacity-60">
                 <div className="animate-scroll-down flex flex-col gap-4">
                     {duplicatedRight.map((img, idx) => (
                         <div
@@ -101,7 +101,7 @@ const LandingPage: React.FC<LandingPageProps> = ({
             {/* Content container */}
             <div className="relative z-10 flex flex-col items-center justify-center px-4 w-full h-full">
                 {/* Donate Here text - hidden on mobile */}
-                <div className="hidden md:flex absolute top-16 right-8 flex-col items-end gap-2 text-primary-brown z-10">
+                <div className="hidden lg:flex absolute top-16 right-8 flex-col items-end gap-2 text-primary-brown z-10">
                     <Image
                         src="/curved-arrow.png"
                         alt="Curved arrow"

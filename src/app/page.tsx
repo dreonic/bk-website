@@ -18,6 +18,22 @@ interface Statistic {
     showPlus: boolean;
 }
 
+// Title component
+
+const Title = ({
+    children,
+    className,
+}: {
+    children: React.ReactNode;
+    className?: string;
+}) => (
+    <h1
+        className={`text-5xl md:text-7xl lg:text-8xl mb-6 font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)] ${className}`}
+    >
+        {children}
+    </h1>
+);
+
 export default function Home() {
     const {
         landingDescription,
@@ -57,20 +73,16 @@ export default function Home() {
 
             {/* Why We Exist */}
             <div className="flex flex-col items-center w-full py-12 md:py-30 px-4 md:px-32 bg-white">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)] text-center mb-6 md:mb-8">
-                    {whyWeExistTitle}
-                </h1>
+                <Title>{whyWeExistTitle}</Title>
                 <p className="text-base md:text-xl text-center text-primary-brown max-w-4xl leading-relaxed font-[family-name:var(--font-gotham-book)]">
                     {whyWeExistDescription}
                 </p>
             </div>
 
             {/* Our Programme */}
-            <div className="flex flex-col items-center w-full py-12 md:h-[90vh] md:pt-15 gap-6 md:gap-8 px-4 bg-secondary-beige">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-primary-brown font-[family-name:var(--font-marons-regular)]">
-                    {ourProgrammeTitle}
-                </h1>
-                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-16 lg:gap-24 w-full">
+            <div className="flex flex-col items-center w-full py-12 lg:h-[90vh] md:py-15 bg-secondary-beige">
+                <Title>{ourProgrammeTitle}</Title>
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-center px-8 gap-8 md:gap-16 lg:gap-24 w-full">
                     {programmes.map((programme, index) => (
                         <div
                             key={index}
@@ -94,11 +106,9 @@ export default function Home() {
             </div>
 
             {/* Statistics */}
-            <div className="flex flex-col items-center justify-center w-full bg-primary-brown py-12 md:py-20 md:h-[90vh]">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-secondary-beige font-[family-name:var(--font-marons-regular)] mb-8 md:mb-12">
-                    {ourImpactTitle}
-                </h1>
-                <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center gap-8 md:gap-16">
+            <div className="flex flex-col items-center justify-center w-full bg-primary-brown py-12 md:py-20 lg:h-[90vh]">
+                <Title className="text-secondary-beige">{ourImpactTitle}</Title>
+                <div className="grid grid-cols-2 md:grid-cols-3 w-full px-4 md:px-32 justify-items-center gap-8 md:gap-16 mt-2">
                     {statistics.map((stat, index) => (
                         <StatisticsItem
                             key={index}
@@ -145,9 +155,7 @@ export default function Home() {
 
             {/* Make a difference */}
             <div className="flex flex-col items-center w-full py-12 md:py-24 justify-center px-6 md:px-32">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-primary-brown -mt-4 font-[family-name:var(--font-marons-regular)] text-center">
-                    {makeADifferenceTitle}
-                </h1>
+                <Title>{makeADifferenceTitle}</Title>
                 <p className="text-sm md:text-xl text-center font-light text-primary-brown my-6 md:my-8">
                     {makeADifferenceDescription
                         .split(". ")
