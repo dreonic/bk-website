@@ -6,25 +6,16 @@ import Header from "@/components/Header";
 import Accordion from "@/components/Accordion";
 import SubmissionConfirmation from "@/components/SubmissionConfirmation";
 import { Button } from "@/components/ui/button";
+import { attributes } from "./content.md";
 
-const headerDescription = `Find the answers to your burning questions here!`;
-
-const faqItems = [
-    {
-        question: "How do I join Balik Kampoeng as a volunteer?",
-        answer: "Check out our Instagram or Telegram Channel for any new updates about Balik Kampoeng.",
-    },
-    {
-        question: "What do you do in Balik Kampoeng as a volunteer?",
-        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-        question: "lorem ipsum",
-        answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-];
+import type { AccordionItem } from "@/components/Accordion";
 
 export default function FAQPage() {
+    const { headerDescription, heroImage, faq } = attributes as {
+        headerDescription: string;
+        heroImage: string;
+        faq: AccordionItem[];
+    };
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [question, setQuestion] = useState("");
@@ -63,7 +54,7 @@ export default function FAQPage() {
                 {/* Hero Image */}
                 <div className="relative w-full max-w-2xl h-48 sm:h-64 md:h-80 mb-8 md:mb-12 rounded-lg overflow-hidden">
                     <Image
-                        src="/faq/faq-hero.jpg"
+                        src={heroImage}
                         alt="FAQ Hero"
                         fill
                         className="object-cover"
@@ -72,7 +63,7 @@ export default function FAQPage() {
 
                 {/* Accordion */}
                 <div className="w-full max-w-2xl mb-12 md:mb-16">
-                    <Accordion items={faqItems} />
+                    <Accordion items={faq} />
                 </div>
 
                 {/* Question Form */}

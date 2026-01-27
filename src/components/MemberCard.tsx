@@ -10,7 +10,7 @@ interface MemberCardProps {
 const MemberCard: React.FC<MemberCardProps> = ({ name, subtitle, image }) => {
     return (
         <div className="flex flex-col items-center gap-2">
-            <div className="relative bg-gray-200 rounded-xl md:rounded-2xl overflow-hidden w-32 h-44 sm:w-36 sm:h-48 md:w-45 md:h-60">
+            <div className="relative bg-gray-200 rounded-xl md:rounded-2xl overflow-hidden w-32 h-44 sm:w-36 sm:h-48 md:w-48 md:h-64 lg:w-56 lg:h-72">
                 {image && (
                     <Image
                         src={image}

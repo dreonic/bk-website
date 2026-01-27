@@ -5,54 +5,20 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import SubmissionConfirmation from "@/components/SubmissionConfirmation";
 import { Button } from "@/components/ui/button";
+import { attributes } from "./content.md";
 
 interface PartnerSection {
     title: string;
     logos: string[];
 }
 
-const headerDescription = `Balik Kampoeng works with sponsors and like-minded NGOs to bring meaningful community programmes to life. Through collaboration, we create initiatives in education, environmental sustainability, and community empowerment that make a real difference. Join us as a partner to amplify impact, reach more communities, and drive positive change together.`;
-
-const partnerSections: PartnerSection[] = [
-    {
-        title: "Past Sponsors",
-        logos: [
-            "/partnership/bank-indonesia.png",
-            "/partnership/pertamina.png",
-            "/partnership/aqua.png",
-            "/partnership/daihatsu.png",
-            "/partnership/ivor1.png",
-            "/partnership/paragon.png",
-            "/partnership/hillcon.png",
-        ],
-    },
-    {
-        title: "Past Partners",
-        logos: [
-            "/partnership/project-wings.png",
-            "/partnership/partner-2.png",
-            "/partnership/partner-3.png",
-            "/partnership/aliansi-pemuda.png",
-            "/partnership/sumatera.png",
-            "/partnership/partner-6.png",
-            "/partnership/sewara-tani.png",
-            "/partnership/ksatria-batam.png",
-        ],
-    },
-    {
-        title: "Past Supporters",
-        logos: [
-            "/partnership/pintu.png",
-            "/partnership/embassy-indonesia.png",
-            "/partnership/nutrisari.png",
-            "/partnership/hilo.png",
-        ],
-    },
-];
-
-const mediaPartnershipDescription = `We welcome media partners who share our commitment to creating positive and meaningful community impact. By collaborating with us, you'll play a key role in spotlighting the stories, challenges, and aspirations of the communities we serve. Through thoughtful coverage and shared platforms, we can raise awareness, inspire action, and strengthen public support for our initiatives. Together, we can amplify voices that matter and bring greater visibility to the work being done on the ground. Please reach out to us to explore media partnership opportunities by filling in the form below.`;
-
 export default function PartnershipPage() {
+    const { headerDescription, partnerSections, mediaPartnershipDescription } =
+        attributes as {
+            headerDescription: string;
+            partnerSections: PartnerSection[];
+            mediaPartnershipDescription: string;
+        };
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [organisation, setOrganisation] = useState("");
@@ -97,9 +63,9 @@ export default function PartnershipPage() {
                 {partnerSections.map((section, index) => (
                     <div
                         key={index}
-                        className="w-full max-w-4xl mb-12 md:mb-16"
+                        className="w-full max-w-4xl mb-12 md:mb-20"
                     >
-                        <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                             {section.title}
                         </h2>
                         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
@@ -122,7 +88,7 @@ export default function PartnershipPage() {
 
                 {/* Media Partnerships Section */}
                 <div className="w-full max-w-4xl mb-16 md:mb-24">
-                    <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-4 md:mb-6 font-[family-name:var(--font-marons-regular)]">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-4 md:mb-6 font-[family-name:var(--font-marons-regular)]">
                         Media Partnerships
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg text-center leading-relaxed">
@@ -132,7 +98,7 @@ export default function PartnershipPage() {
 
                 {/* Contact Form */}
                 <div className="w-full max-w-md px-4 sm:px-0">
-                    <h2 className="text-[1.75rem] sm:text-[2rem] md:text-[3rem] text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-6 md:mb-8 font-[family-name:var(--font-marons-regular)]">
                         Contact Us
                     </h2>
 
