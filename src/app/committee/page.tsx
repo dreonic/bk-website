@@ -67,10 +67,7 @@ export default function CommitteePage() {
                                     alt={`${department.title} group photo`}
                                     fill
                                     className="object-cover"
-                                    priority={
-                                        department.label ===
-                                        departments[0]?.label
-                                    }
+                                    priority={true}
                                 />
                             )}
                         </div>

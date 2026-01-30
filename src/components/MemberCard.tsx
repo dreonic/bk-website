@@ -17,6 +17,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ name, subtitle, image }) => {
                         alt={name}
                         fill
                         className="object-cover"
+                        priority={true}
                     />
                 )}
             </div>
