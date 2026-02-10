@@ -29,7 +29,7 @@ donationMethods:
     bankName: DBS Bank Pte. Ltd.
     accountName: Muhammad Wisnu Darmawan
     accountDetails: "PayNow Number: +6596860658"
-    qrCodeSrc: /donate/qr-paynow.jpg
+    qrCodeSrc: /donate/paynow-qr-icn.jpg
 otherMethodsTitle: Other Methods
 otherMethodsDescription: If you are unable to donate through the above methods,
   please fill in the form so our team can reach out to you directly.
