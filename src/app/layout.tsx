@@ -23,8 +23,9 @@ const maronsRegular = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Balik Kampoeng",
-    description: "Indonesian Volunteering Community in NTU",
+    title: "Balik Kampoeng (BK)",
+    description:
+        "Balik Kampoeng (BK) is an Indonesian Volunteering Community in NTU",
 };
 
 export default function RootLayout({
