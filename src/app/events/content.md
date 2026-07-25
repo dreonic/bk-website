@@ -9,6 +9,27 @@ headerDescription: >-
 
   These moments remind us of the impact we can create when we work with heart, purpose, and unity. Take a look at some of our past projects and the stories behind them!
 events:
+  - alternateImages: false
+    year: 2026
+    yearEvents:
+      - imageUrl: /events/2026.jpeg
+        eventType: "balik kampoeng 2026:"
+        eventName: Boyolali, Ojo Lali
+        description: "Balik Kampoeng 2026: \"Boyolali, Ojo Lali\" invites everyone to
+          reconnect with their roots by creating meaningful and lasting impact
+          together. Through empowering local communities, supporting education,
+          preserving culture, and fostering sustainable development, we hope to
+          give back to Boyolali in ways that continue long after our journey
+          ends. We believe that Boyolali's greatest strength lies not only in
+          its beautiful landscapes and rich heritage, but also in the
+          resilience, kindness, and potential of its people."
+      - imageUrl: /events/2026-beach-clean-up.jpg
+        eventType: "beloem balik kampoeng:"
+        eventName: Beach Clean Up
+        description: Volunteers gathered to clean up the beaches, removing waste and
+          debris, all while raising awareness about the growing issue of plastic
+          pollution. It’s a reminder that every effort counts in protecting our
+          oceans and environment.
   - year: "2025"
     yearEvents:
       - imageUrl: /events/2025.png
